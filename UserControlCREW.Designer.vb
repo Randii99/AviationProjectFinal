@@ -22,293 +22,300 @@ Partial Class UserControlCREW
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Panel1 = New Panel()
-        lblSelectedID = New Label()
-        PictureBox1 = New PictureBox()
-        btnDeleteCM = New FontAwesome.Sharp.IconButton()
-        btnUpdateCM = New FontAwesome.Sharp.IconButton()
-        btnSaveCM = New FontAwesome.Sharp.IconButton()
-        cbPosition = New ComboBox()
-        cbGroup = New ComboBox()
-        tbName = New TextBox()
-        Label4 = New Label()
-        Label3 = New Label()
-        Label2 = New Label()
-        Label1 = New Label()
-        Panel2 = New Panel()
-        dgvCrew = New DataGridView()
-        AID = New DataGridViewTextBoxColumn()
-        AName = New DataGridViewTextBoxColumn()
-        AGroup = New DataGridViewTextBoxColumn()
-        APosition = New DataGridViewTextBoxColumn()
-        Panel1.SuspendLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        Panel2.SuspendLayout()
-        CType(dgvCrew, ComponentModel.ISupportInitialize).BeginInit()
-        SuspendLayout()
-        ' 
-        ' Panel1
-        ' 
-        Panel1.BackColor = SystemColors.ControlLight
-        Panel1.Controls.Add(lblSelectedID)
-        Panel1.Controls.Add(PictureBox1)
-        Panel1.Controls.Add(btnDeleteCM)
-        Panel1.Controls.Add(btnUpdateCM)
-        Panel1.Controls.Add(btnSaveCM)
-        Panel1.Controls.Add(cbPosition)
-        Panel1.Controls.Add(cbGroup)
-        Panel1.Controls.Add(tbName)
-        Panel1.Controls.Add(Label4)
-        Panel1.Controls.Add(Label3)
-        Panel1.Controls.Add(Label2)
-        Panel1.Controls.Add(Label1)
-        Panel1.Dock = DockStyle.Left
-        Panel1.Location = New Point(0, 0)
-        Panel1.Name = "Panel1"
-        Panel1.Padding = New Padding(10)
-        Panel1.Size = New Size(478, 632)
-        Panel1.TabIndex = 0
-        ' 
-        ' lblSelectedID
-        ' 
-        lblSelectedID.AutoSize = True
-        lblSelectedID.BackColor = Color.Transparent
-        lblSelectedID.ForeColor = Color.IndianRed
-        lblSelectedID.Location = New Point(385, 449)
-        lblSelectedID.Name = "lblSelectedID"
-        lblSelectedID.Size = New Size(0, 15)
-        lblSelectedID.TabIndex = 24
-        ' 
-        ' PictureBox1
-        ' 
-        PictureBox1.BackColor = SystemColors.ControlLight
-        PictureBox1.Image = My.Resources.Resources.logo
-        PictureBox1.Location = New Point(387, 13)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(83, 43)
-        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox1.TabIndex = 23
-        PictureBox1.TabStop = False
-        ' 
-        ' btnDeleteCM
-        ' 
-        btnDeleteCM.BackColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        btnDeleteCM.Cursor = Cursors.Hand
-        btnDeleteCM.FlatAppearance.BorderColor = SystemColors.ButtonFace
-        btnDeleteCM.FlatAppearance.BorderSize = 0
-        btnDeleteCM.FlatAppearance.MouseDownBackColor = Color.White
-        btnDeleteCM.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
-        btnDeleteCM.FlatStyle = FlatStyle.Flat
-        btnDeleteCM.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        btnDeleteCM.ForeColor = Color.White
-        btnDeleteCM.IconChar = FontAwesome.Sharp.IconChar.TrashAlt
-        btnDeleteCM.IconColor = Color.White
-        btnDeleteCM.IconFont = FontAwesome.Sharp.IconFont.Solid
-        btnDeleteCM.IconSize = 20
-        btnDeleteCM.Location = New Point(289, 345)
-        btnDeleteCM.Name = "btnDeleteCM"
-        btnDeleteCM.Size = New Size(150, 35)
-        btnDeleteCM.TabIndex = 22
-        btnDeleteCM.Text = "DELETE"
-        btnDeleteCM.TextAlign = ContentAlignment.MiddleRight
-        btnDeleteCM.TextImageRelation = TextImageRelation.ImageBeforeText
-        btnDeleteCM.UseVisualStyleBackColor = False
-        ' 
-        ' btnUpdateCM
-        ' 
-        btnUpdateCM.BackColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        btnUpdateCM.Cursor = Cursors.Hand
-        btnUpdateCM.FlatAppearance.BorderColor = SystemColors.ButtonFace
-        btnUpdateCM.FlatAppearance.BorderSize = 0
-        btnUpdateCM.FlatAppearance.MouseDownBackColor = Color.White
-        btnUpdateCM.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(0), CByte(60), CByte(179))
-        btnUpdateCM.FlatStyle = FlatStyle.Flat
-        btnUpdateCM.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        btnUpdateCM.ForeColor = Color.White
-        btnUpdateCM.IconChar = FontAwesome.Sharp.IconChar.PenToSquare
-        btnUpdateCM.IconColor = Color.White
-        btnUpdateCM.IconFont = FontAwesome.Sharp.IconFont.Solid
-        btnUpdateCM.IconSize = 20
-        btnUpdateCM.Location = New Point(289, 301)
-        btnUpdateCM.Name = "btnUpdateCM"
-        btnUpdateCM.Size = New Size(150, 35)
-        btnUpdateCM.TabIndex = 21
-        btnUpdateCM.Text = "UPDATE"
-        btnUpdateCM.TextAlign = ContentAlignment.MiddleRight
-        btnUpdateCM.TextImageRelation = TextImageRelation.ImageBeforeText
-        btnUpdateCM.UseVisualStyleBackColor = False
-        ' 
-        ' btnSaveCM
-        ' 
-        btnSaveCM.BackColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        btnSaveCM.Cursor = Cursors.Hand
-        btnSaveCM.FlatAppearance.BorderColor = SystemColors.ButtonFace
-        btnSaveCM.FlatAppearance.BorderSize = 0
-        btnSaveCM.FlatAppearance.MouseDownBackColor = Color.White
-        btnSaveCM.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(0), CByte(60), CByte(179))
-        btnSaveCM.FlatStyle = FlatStyle.Flat
-        btnSaveCM.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        btnSaveCM.ForeColor = Color.White
-        btnSaveCM.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk
-        btnSaveCM.IconColor = Color.White
-        btnSaveCM.IconFont = FontAwesome.Sharp.IconFont.Solid
-        btnSaveCM.IconSize = 20
-        btnSaveCM.Location = New Point(289, 257)
-        btnSaveCM.Name = "btnSaveCM"
-        btnSaveCM.Size = New Size(150, 35)
-        btnSaveCM.TabIndex = 20
-        btnSaveCM.Text = "SAVE"
-        btnSaveCM.TextAlign = ContentAlignment.MiddleRight
-        btnSaveCM.TextImageRelation = TextImageRelation.ImageBeforeText
-        btnSaveCM.UseVisualStyleBackColor = False
-        ' 
-        ' cbPosition
-        ' 
-        cbPosition.FormattingEnabled = True
-        cbPosition.Location = New Point(235, 179)
-        cbPosition.Name = "cbPosition"
-        cbPosition.Size = New Size(204, 23)
-        cbPosition.TabIndex = 9
-        ' 
-        ' cbGroup
-        ' 
-        cbGroup.FormattingEnabled = True
-        cbGroup.Location = New Point(235, 131)
-        cbGroup.Name = "cbGroup"
-        cbGroup.Size = New Size(204, 23)
-        cbGroup.TabIndex = 8
-        ' 
-        ' tbName
-        ' 
-        tbName.Location = New Point(235, 83)
-        tbName.Name = "tbName"
-        tbName.Size = New Size(204, 23)
-        tbName.TabIndex = 7
-        ' 
-        ' Label4
-        ' 
-        Label4.Location = New Point(99, 182)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(110, 15)
-        Label4.TabIndex = 6
-        Label4.Text = "POSITION"' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Location = New Point(99, 134)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(46, 15)
-        Label3.TabIndex = 5
-        Label3.Text = "GROUP"' 
-        ' Label2
-        ' 
-        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Label2.Location = New Point(99, 87)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(66, 15)
-        Label2.TabIndex = 4
-        Label2.Text = "NAME"' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.Location = New Point(68, 24)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(215, 24)
-        Label1.TabIndex = 3
-        Label1.Text = "CREWMEN DETAILS"' 
-        ' Panel2
-        ' 
-        Panel2.BackColor = SystemColors.ActiveCaption
-        Panel2.Controls.Add(dgvCrew)
-        Panel2.Dock = DockStyle.Fill
-        Panel2.Location = New Point(478, 0)
-        Panel2.Name = "Panel2"
-        Panel2.Padding = New Padding(10)
-        Panel2.Size = New Size(578, 632)
-        Panel2.TabIndex = 1
-        ' 
-        ' dgvCrew
-        ' 
-        dgvCrew.AllowUserToAddRows = False
-        dgvCrew.AllowUserToDeleteRows = False
-        dgvCrew.BackgroundColor = SystemColors.ActiveCaption
-        dgvCrew.BorderStyle = BorderStyle.None
-        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = SystemColors.Control
-        DataGridViewCellStyle1.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
-        dgvCrew.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        dgvCrew.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvCrew.Columns.AddRange(New DataGridViewColumn() {AID, AName, AGroup, APosition})
-        dgvCrew.Dock = DockStyle.Fill
-        dgvCrew.Location = New Point(10, 10)
-        dgvCrew.Name = "dgvCrew"
-        dgvCrew.ReadOnly = True
-        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = SystemColors.Control
-        DataGridViewCellStyle2.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        DataGridViewCellStyle2.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
-        dgvCrew.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
-        dgvCrew.RowHeadersWidth = 4
-        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter
-        dgvCrew.RowsDefaultCellStyle = DataGridViewCellStyle3
-        dgvCrew.RowTemplate.Height = 25
-        dgvCrew.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        dgvCrew.Size = New Size(558, 612)
-        dgvCrew.TabIndex = 0
-        ' 
-        ' AID
-        ' 
-        AID.HeaderText = "ID"
-        AID.Name = "AID"
-        AID.ReadOnly = True
-        AID.Width = 180
-        ' 
-        ' AName
-        ' 
-        AName.HeaderText = "NAME"
-        AName.Name = "AName"
-        AName.ReadOnly = True
-        AName.Width = 200
-        ' 
-        ' AGroup
-        ' 
-        AGroup.HeaderText = "GROUP"
-        AGroup.Name = "AGroup"
-        AGroup.ReadOnly = True
-        AGroup.Width = 200
-        ' 
-        ' APosition
-        ' 
-        APosition.HeaderText = "POSITION"
-        APosition.Name = "APosition"
-        APosition.ReadOnly = True
-        APosition.Width = 200
-        ' 
-        ' UserControlCREW
-        ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
-        AutoScaleMode = AutoScaleMode.Font
-        Controls.Add(Panel2)
-        Controls.Add(Panel1)
-        Name = "UserControlCREW"
-        Size = New Size(1056, 632)
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        Panel2.ResumeLayout(False)
-        CType(dgvCrew, ComponentModel.ISupportInitialize).EndInit()
-        ResumeLayout(False)
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblSelectedID = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnDeleteCM = New FontAwesome.Sharp.IconButton()
+        Me.btnUpdateCM = New FontAwesome.Sharp.IconButton()
+        Me.btnSaveCM = New FontAwesome.Sharp.IconButton()
+        Me.cbPosition = New System.Windows.Forms.ComboBox()
+        Me.cbGroup = New System.Windows.Forms.ComboBox()
+        Me.tbName = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.dgvCrew = New System.Windows.Forms.DataGridView()
+        Me.AID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AGroup = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.APosition = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
+        CType(Me.dgvCrew, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Panel1.Controls.Add(Me.lblSelectedID)
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Controls.Add(Me.btnDeleteCM)
+        Me.Panel1.Controls.Add(Me.btnUpdateCM)
+        Me.Panel1.Controls.Add(Me.btnSaveCM)
+        Me.Panel1.Controls.Add(Me.cbPosition)
+        Me.Panel1.Controls.Add(Me.cbGroup)
+        Me.Panel1.Controls.Add(Me.tbName)
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Padding = New System.Windows.Forms.Padding(10)
+        Me.Panel1.Size = New System.Drawing.Size(478, 632)
+        Me.Panel1.TabIndex = 0
+        '
+        'lblSelectedID
+        '
+        Me.lblSelectedID.AutoSize = True
+        Me.lblSelectedID.BackColor = System.Drawing.Color.Transparent
+        Me.lblSelectedID.ForeColor = System.Drawing.Color.IndianRed
+        Me.lblSelectedID.Location = New System.Drawing.Point(385, 449)
+        Me.lblSelectedID.Name = "lblSelectedID"
+        Me.lblSelectedID.Size = New System.Drawing.Size(0, 15)
+        Me.lblSelectedID.TabIndex = 24
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.PictureBox1.Image = Global.CPCAviationDutyAssignManagement.My.Resources.Resources.logo
+        Me.PictureBox1.Location = New System.Drawing.Point(387, 13)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(83, 43)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 23
+        Me.PictureBox1.TabStop = False
+        '
+        'btnDeleteCM
+        '
+        Me.btnDeleteCM.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnDeleteCM.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnDeleteCM.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace
+        Me.btnDeleteCM.FlatAppearance.BorderSize = 0
+        Me.btnDeleteCM.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnDeleteCM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnDeleteCM.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDeleteCM.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnDeleteCM.ForeColor = System.Drawing.Color.White
+        Me.btnDeleteCM.IconChar = FontAwesome.Sharp.IconChar.TrashAlt
+        Me.btnDeleteCM.IconColor = System.Drawing.Color.White
+        Me.btnDeleteCM.IconFont = FontAwesome.Sharp.IconFont.Solid
+        Me.btnDeleteCM.IconSize = 20
+        Me.btnDeleteCM.Location = New System.Drawing.Point(289, 345)
+        Me.btnDeleteCM.Name = "btnDeleteCM"
+        Me.btnDeleteCM.Size = New System.Drawing.Size(150, 35)
+        Me.btnDeleteCM.TabIndex = 22
+        Me.btnDeleteCM.Text = "DELETE"
+        Me.btnDeleteCM.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnDeleteCM.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnDeleteCM.UseVisualStyleBackColor = False
+        '
+        'btnUpdateCM
+        '
+        Me.btnUpdateCM.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnUpdateCM.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnUpdateCM.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace
+        Me.btnUpdateCM.FlatAppearance.BorderSize = 0
+        Me.btnUpdateCM.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnUpdateCM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(179, Byte), Integer))
+        Me.btnUpdateCM.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUpdateCM.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnUpdateCM.ForeColor = System.Drawing.Color.White
+        Me.btnUpdateCM.IconChar = FontAwesome.Sharp.IconChar.PenToSquare
+        Me.btnUpdateCM.IconColor = System.Drawing.Color.White
+        Me.btnUpdateCM.IconFont = FontAwesome.Sharp.IconFont.Solid
+        Me.btnUpdateCM.IconSize = 20
+        Me.btnUpdateCM.Location = New System.Drawing.Point(289, 301)
+        Me.btnUpdateCM.Name = "btnUpdateCM"
+        Me.btnUpdateCM.Size = New System.Drawing.Size(150, 35)
+        Me.btnUpdateCM.TabIndex = 21
+        Me.btnUpdateCM.Text = "UPDATE"
+        Me.btnUpdateCM.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnUpdateCM.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnUpdateCM.UseVisualStyleBackColor = False
+        '
+        'btnSaveCM
+        '
+        Me.btnSaveCM.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnSaveCM.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSaveCM.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace
+        Me.btnSaveCM.FlatAppearance.BorderSize = 0
+        Me.btnSaveCM.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnSaveCM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(179, Byte), Integer))
+        Me.btnSaveCM.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSaveCM.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnSaveCM.ForeColor = System.Drawing.Color.White
+        Me.btnSaveCM.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk
+        Me.btnSaveCM.IconColor = System.Drawing.Color.White
+        Me.btnSaveCM.IconFont = FontAwesome.Sharp.IconFont.Solid
+        Me.btnSaveCM.IconSize = 20
+        Me.btnSaveCM.Location = New System.Drawing.Point(289, 257)
+        Me.btnSaveCM.Name = "btnSaveCM"
+        Me.btnSaveCM.Size = New System.Drawing.Size(150, 35)
+        Me.btnSaveCM.TabIndex = 20
+        Me.btnSaveCM.Text = "SAVE"
+        Me.btnSaveCM.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnSaveCM.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnSaveCM.UseVisualStyleBackColor = False
+        '
+        'cbPosition
+        '
+        Me.cbPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbPosition.FormattingEnabled = True
+        Me.cbPosition.Location = New System.Drawing.Point(235, 179)
+        Me.cbPosition.Name = "cbPosition"
+        Me.cbPosition.Size = New System.Drawing.Size(204, 23)
+        Me.cbPosition.TabIndex = 9
+        '
+        'cbGroup
+        '
+        Me.cbGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbGroup.FormattingEnabled = True
+        Me.cbGroup.Location = New System.Drawing.Point(235, 131)
+        Me.cbGroup.Name = "cbGroup"
+        Me.cbGroup.Size = New System.Drawing.Size(204, 23)
+        Me.cbGroup.TabIndex = 8
+        '
+        'tbName
+        '
+        Me.tbName.Location = New System.Drawing.Point(235, 83)
+        Me.tbName.Name = "tbName"
+        Me.tbName.Size = New System.Drawing.Size(204, 23)
+        Me.tbName.TabIndex = 7
+        '
+        'Label4
+        '
+        Me.Label4.Location = New System.Drawing.Point(99, 182)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(110, 15)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = "POSITION"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(99, 134)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(46, 15)
+        Me.Label3.TabIndex = 5
+        Me.Label3.Text = "GROUP"
+        '
+        'Label2
+        '
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.Location = New System.Drawing.Point(99, 87)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(66, 15)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "NAME"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(68, 24)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(215, 24)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "CREWMEN DETAILS"
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel2.Controls.Add(Me.dgvCrew)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel2.Location = New System.Drawing.Point(478, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Padding = New System.Windows.Forms.Padding(10)
+        Me.Panel2.Size = New System.Drawing.Size(578, 632)
+        Me.Panel2.TabIndex = 1
+        '
+        'dgvCrew
+        '
+        Me.dgvCrew.AllowUserToAddRows = False
+        Me.dgvCrew.AllowUserToDeleteRows = False
+        Me.dgvCrew.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
+        Me.dgvCrew.BorderStyle = System.Windows.Forms.BorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvCrew.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvCrew.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvCrew.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.AID, Me.AName, Me.AGroup, Me.APosition})
+        Me.dgvCrew.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvCrew.Location = New System.Drawing.Point(10, 10)
+        Me.dgvCrew.Name = "dgvCrew"
+        Me.dgvCrew.ReadOnly = True
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvCrew.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvCrew.RowHeadersWidth = 4
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.dgvCrew.RowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgvCrew.RowTemplate.Height = 25
+        Me.dgvCrew.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvCrew.Size = New System.Drawing.Size(558, 612)
+        Me.dgvCrew.TabIndex = 0
+        '
+        'AID
+        '
+        Me.AID.HeaderText = "ID"
+        Me.AID.Name = "AID"
+        Me.AID.ReadOnly = True
+        Me.AID.Width = 180
+        '
+        'AName
+        '
+        Me.AName.HeaderText = "NAME"
+        Me.AName.Name = "AName"
+        Me.AName.ReadOnly = True
+        Me.AName.Width = 200
+        '
+        'AGroup
+        '
+        Me.AGroup.HeaderText = "GROUP"
+        Me.AGroup.Name = "AGroup"
+        Me.AGroup.ReadOnly = True
+        Me.AGroup.Width = 200
+        '
+        'APosition
+        '
+        Me.APosition.HeaderText = "POSITION"
+        Me.APosition.Name = "APosition"
+        Me.APosition.ReadOnly = True
+        Me.APosition.Width = 200
+        '
+        'UserControlCREW
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Panel1)
+        Me.Name = "UserControlCREW"
+        Me.Size = New System.Drawing.Size(1056, 632)
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        CType(Me.dgvCrew, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+
     End Sub
 
     Friend WithEvents Panel1 As Panel

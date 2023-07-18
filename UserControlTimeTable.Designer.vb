@@ -22,1124 +22,1131 @@ Partial Class UserControlTimeTable
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Label1 = New Label()
-        Panel1 = New Panel()
-        Panel7 = New Panel()
-        cbGroup = New ComboBox()
-        Label7 = New Label()
-        Panel6 = New Panel()
-        cbAddMoreRIC = New ComboBox()
-        btnAddRICToTable = New FontAwesome.Sharp.IconButton()
-        btnAddAgainRIC = New FontAwesome.Sharp.IconButton()
-        Label12 = New Label()
-        lbRemovedRIC = New ListBox()
-        Label13 = New Label()
-        btnRICRemove = New FontAwesome.Sharp.IconButton()
-        lbRIC = New ListBox()
-        pnlRIC = New Panel()
-        IconPictureBox3 = New FontAwesome.Sharp.IconPictureBox()
-        Label9 = New Label()
-        pnlCM = New Panel()
-        ContextMenuStrip2 = New ContextMenuStrip(components)
-        ADDToolStripMenuItem = New ToolStripMenuItem()
-        cbAddMoreCM = New ComboBox()
-        btnAddCMToTable = New FontAwesome.Sharp.IconButton()
-        btnAddAgainCM = New FontAwesome.Sharp.IconButton()
-        Label11 = New Label()
-        lbRemovedCM = New ListBox()
-        Label10 = New Label()
-        btnCMRemove = New FontAwesome.Sharp.IconButton()
-        lbCM = New ListBox()
-        Panel8 = New Panel()
-        IconPictureBox2 = New FontAwesome.Sharp.IconPictureBox()
-        Label8 = New Label()
-        Panel3 = New Panel()
-        btnRefresh = New FontAwesome.Sharp.IconButton()
-        btnPlaneAdd = New FontAwesome.Sharp.IconButton()
-        lblShift = New Label()
-        lblDay = New Label()
-        cbShiftTime = New ComboBox()
-        dtpDate = New DateTimePicker()
-        Label5 = New Label()
-        Panel4 = New Panel()
-        IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
-        Label6 = New Label()
-        Label3 = New Label()
-        Label4 = New Label()
-        Label2 = New Label()
-        Panel2 = New Panel()
-        Panel11 = New Panel()
-        Panel9 = New Panel()
-        dgvMain = New DataGridView()
-        Column2 = New DataGridViewCheckBoxColumn()
-        Column1 = New DataGridViewTextBoxColumn()
-        noo = New DataGridViewTextBoxColumn()
-        fli = New DataGridViewTextBoxColumn()
-        Column10 = New DataGridViewTextBoxColumn()
-        Column4 = New DataGridViewTextBoxColumn()
-        lines = New DataGridViewTextBoxColumn()
-        Column6 = New DataGridViewComboBoxColumn()
-        Column7 = New DataGridViewComboBoxColumn()
-        Column8 = New DataGridViewComboBoxColumn()
-        Column9 = New DataGridViewTextBoxColumn()
-        Column3 = New DataGridViewCheckBoxColumn()
-        Column5 = New DataGridViewTextBoxColumn()
-        Panel12 = New Panel()
-        tbRoute = New TextBox()
-        Label18 = New Label()
-        lblETAShow = New Label()
-        Label16 = New Label()
-        Label17 = New Label()
-        lblSelectedFlight = New Label()
-        cbOPerater = New ComboBox()
-        btnUpdateData = New FontAwesome.Sharp.IconButton()
-        Label19 = New Label()
-        cboxremarks = New ComboBox()
-        tbBayNo = New TextBox()
-        Label15 = New Label()
-        Label14 = New Label()
-        btnResizePnl = New FontAwesome.Sharp.IconButton()
-        Panel5 = New Panel()
-        lbltoday = New Label()
-        lblTime = New Label()
-        Panel10 = New Panel()
-        btnPrint = New FontAwesome.Sharp.IconButton()
-        Timer1 = New Timer(components)
-        ContextMenuStrip1 = New ContextMenuStrip(components)
-        Panel1.SuspendLayout()
-        Panel7.SuspendLayout()
-        Panel6.SuspendLayout()
-        pnlRIC.SuspendLayout()
-        CType(IconPictureBox3, ComponentModel.ISupportInitialize).BeginInit()
-        pnlCM.SuspendLayout()
-        ContextMenuStrip2.SuspendLayout()
-        Panel8.SuspendLayout()
-        CType(IconPictureBox2, ComponentModel.ISupportInitialize).BeginInit()
-        Panel3.SuspendLayout()
-        Panel4.SuspendLayout()
-        CType(IconPictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        Panel2.SuspendLayout()
-        Panel11.SuspendLayout()
-        Panel9.SuspendLayout()
-        CType(dgvMain, ComponentModel.ISupportInitialize).BeginInit()
-        Panel12.SuspendLayout()
-        Panel5.SuspendLayout()
-        Panel10.SuspendLayout()
-        SuspendLayout()
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.Location = New Point(50, 12)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(266, 24)
-        Label1.TabIndex = 4
-        Label1.Text = "DAILY WORK SCHEDULE"
-        ' 
-        ' Panel1
-        ' 
-        Panel1.Controls.Add(Panel7)
-        Panel1.Controls.Add(Panel6)
-        Panel1.Controls.Add(pnlCM)
-        Panel1.Controls.Add(Panel3)
-        Panel1.Controls.Add(Label1)
-        Panel1.Dock = DockStyle.Left
-        Panel1.Location = New Point(0, 0)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(320, 752)
-        Panel1.TabIndex = 5
-        ' 
-        ' Panel7
-        ' 
-        Panel7.BackColor = Color.WhiteSmoke
-        Panel7.Controls.Add(cbGroup)
-        Panel7.Controls.Add(Label7)
-        Panel7.Location = New Point(55, 240)
-        Panel7.Name = "Panel7"
-        Panel7.Size = New Size(255, 48)
-        Panel7.TabIndex = 7
-        ' 
-        ' cbGroup
-        ' 
-        cbGroup.FormattingEnabled = True
-        cbGroup.Location = New Point(106, 14)
-        cbGroup.Name = "cbGroup"
-        cbGroup.Size = New Size(121, 23)
-        cbGroup.TabIndex = 1
-        ' 
-        ' Label7
-        ' 
-        Label7.BackColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        Label7.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        Label7.ForeColor = Color.White
-        Label7.Location = New Point(0, 0)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(76, 48)
-        Label7.TabIndex = 0
-        Label7.Text = "GROUP"
-        Label7.TextAlign = ContentAlignment.MiddleCenter
-        ' 
-        ' Panel6
-        ' 
-        Panel6.BackColor = Color.WhiteSmoke
-        Panel6.Controls.Add(cbAddMoreRIC)
-        Panel6.Controls.Add(btnAddRICToTable)
-        Panel6.Controls.Add(btnAddAgainRIC)
-        Panel6.Controls.Add(Label12)
-        Panel6.Controls.Add(lbRemovedRIC)
-        Panel6.Controls.Add(Label13)
-        Panel6.Controls.Add(btnRICRemove)
-        Panel6.Controls.Add(lbRIC)
-        Panel6.Controls.Add(pnlRIC)
-        Panel6.Location = New Point(56, 515)
-        Panel6.Name = "Panel6"
-        Panel6.Size = New Size(255, 217)
-        Panel6.TabIndex = 7
-        ' 
-        ' cbAddMoreRIC
-        ' 
-        cbAddMoreRIC.FormattingEnabled = True
-        cbAddMoreRIC.Location = New Point(14, 177)
-        cbAddMoreRIC.Name = "cbAddMoreRIC"
-        cbAddMoreRIC.Size = New Size(87, 23)
-        cbAddMoreRIC.TabIndex = 16
-        ' 
-        ' btnAddRICToTable
-        ' 
-        btnAddRICToTable.BackColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        btnAddRICToTable.BackgroundImageLayout = ImageLayout.None
-        btnAddRICToTable.Cursor = Cursors.Hand
-        btnAddRICToTable.FlatAppearance.BorderColor = Color.FromArgb(CByte(230), CByte(230), CByte(0))
-        btnAddRICToTable.FlatAppearance.BorderSize = 0
-        btnAddRICToTable.FlatAppearance.MouseDownBackColor = Color.White
-        btnAddRICToTable.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(77), CByte(153), CByte(0))
-        btnAddRICToTable.FlatStyle = FlatStyle.Flat
-        btnAddRICToTable.IconChar = FontAwesome.Sharp.IconChar.UserLock
-        btnAddRICToTable.IconColor = Color.White
-        btnAddRICToTable.IconFont = FontAwesome.Sharp.IconFont.Auto
-        btnAddRICToTable.IconSize = 25
-        btnAddRICToTable.Location = New Point(127, 177)
-        btnAddRICToTable.Name = "btnAddRICToTable"
-        btnAddRICToTable.Size = New Size(111, 29)
-        btnAddRICToTable.TabIndex = 21
-        btnAddRICToTable.TextAlign = ContentAlignment.MiddleRight
-        btnAddRICToTable.UseVisualStyleBackColor = False
-        ' 
-        ' btnAddAgainRIC
-        ' 
-        btnAddAgainRIC.BackColor = Color.White
-        btnAddAgainRIC.Cursor = Cursors.Hand
-        btnAddAgainRIC.FlatAppearance.BorderSize = 0
-        btnAddAgainRIC.FlatAppearance.MouseDownBackColor = Color.White
-        btnAddAgainRIC.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(77), CByte(153), CByte(0))
-        btnAddAgainRIC.FlatStyle = FlatStyle.Flat
-        btnAddAgainRIC.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft
-        btnAddAgainRIC.IconColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        btnAddAgainRIC.IconFont = FontAwesome.Sharp.IconFont.Auto
-        btnAddAgainRIC.IconSize = 25
-        btnAddAgainRIC.Location = New Point(106, 108)
-        btnAddAgainRIC.Name = "btnAddAgainRIC"
-        btnAddAgainRIC.Size = New Size(40, 40)
-        btnAddAgainRIC.TabIndex = 20
-        btnAddAgainRIC.UseVisualStyleBackColor = False
-        ' 
-        ' Label12
-        ' 
-        Label12.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Label12.Location = New Point(152, 27)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(66, 15)
-        Label12.TabIndex = 19
-        Label12.Text = "OUT"
-        ' 
-        ' lbRemovedRIC
-        ' 
-        lbRemovedRIC.BackColor = SystemColors.ButtonHighlight
-        lbRemovedRIC.Cursor = Cursors.Hand
-        lbRemovedRIC.FormattingEnabled = True
-        lbRemovedRIC.ItemHeight = 15
-        lbRemovedRIC.Location = New Point(151, 45)
-        lbRemovedRIC.Name = "lbRemovedRIC"
-        lbRemovedRIC.Size = New Size(87, 124)
-        lbRemovedRIC.TabIndex = 18
-        ' 
-        ' Label13
-        ' 
-        Label13.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Label13.Location = New Point(14, 27)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(66, 15)
-        Label13.TabIndex = 17
-        Label13.Text = "IN"
-        ' 
-        ' btnRICRemove
-        ' 
-        btnRICRemove.BackColor = Color.White
-        btnRICRemove.Cursor = Cursors.Hand
-        btnRICRemove.FlatAppearance.BorderSize = 0
-        btnRICRemove.FlatAppearance.MouseDownBackColor = Color.White
-        btnRICRemove.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
-        btnRICRemove.FlatStyle = FlatStyle.Flat
-        btnRICRemove.IconChar = FontAwesome.Sharp.IconChar.ArrowRight
-        btnRICRemove.IconColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        btnRICRemove.IconFont = FontAwesome.Sharp.IconFont.Auto
-        btnRICRemove.IconSize = 25
-        btnRICRemove.Location = New Point(106, 62)
-        btnRICRemove.Name = "btnRICRemove"
-        btnRICRemove.Size = New Size(40, 40)
-        btnRICRemove.TabIndex = 16
-        btnRICRemove.UseVisualStyleBackColor = False
-        ' 
-        ' lbRIC
-        ' 
-        lbRIC.AllowDrop = True
-        lbRIC.BackColor = SystemColors.ButtonHighlight
-        lbRIC.Cursor = Cursors.Hand
-        lbRIC.FormattingEnabled = True
-        lbRIC.ItemHeight = 15
-        lbRIC.Location = New Point(14, 45)
-        lbRIC.Name = "lbRIC"
-        lbRIC.Size = New Size(87, 124)
-        lbRIC.TabIndex = 15
-        ' 
-        ' pnlRIC
-        ' 
-        pnlRIC.BackColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        pnlRIC.Controls.Add(IconPictureBox3)
-        pnlRIC.Controls.Add(Label9)
-        pnlRIC.Dock = DockStyle.Top
-        pnlRIC.Location = New Point(0, 0)
-        pnlRIC.Name = "pnlRIC"
-        pnlRIC.Size = New Size(255, 23)
-        pnlRIC.TabIndex = 2
-        ' 
-        ' IconPictureBox3
-        ' 
-        IconPictureBox3.BackColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        IconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.PlusSquare
-        IconPictureBox3.IconColor = Color.White
-        IconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto
-        IconPictureBox3.IconSize = 21
-        IconPictureBox3.Location = New Point(229, 3)
-        IconPictureBox3.Name = "IconPictureBox3"
-        IconPictureBox3.Size = New Size(21, 26)
-        IconPictureBox3.TabIndex = 9
-        IconPictureBox3.TabStop = False
-        ' 
-        ' Label9
-        ' 
-        Label9.AutoSize = True
-        Label9.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        Label9.ForeColor = Color.Transparent
-        Label9.Location = New Point(6, 5)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(26, 15)
-        Label9.TabIndex = 0
-        Label9.Text = "RIC"
-        ' 
-        ' pnlCM
-        ' 
-        pnlCM.BackColor = Color.WhiteSmoke
-        pnlCM.ContextMenuStrip = ContextMenuStrip2
-        pnlCM.Controls.Add(cbAddMoreCM)
-        pnlCM.Controls.Add(btnAddCMToTable)
-        pnlCM.Controls.Add(btnAddAgainCM)
-        pnlCM.Controls.Add(Label11)
-        pnlCM.Controls.Add(lbRemovedCM)
-        pnlCM.Controls.Add(Label10)
-        pnlCM.Controls.Add(btnCMRemove)
-        pnlCM.Controls.Add(lbCM)
-        pnlCM.Controls.Add(Panel8)
-        pnlCM.Location = New Point(55, 293)
-        pnlCM.Name = "pnlCM"
-        pnlCM.Size = New Size(255, 217)
-        pnlCM.TabIndex = 6
-        ' 
-        ' ContextMenuStrip2
-        ' 
-        ContextMenuStrip2.Items.AddRange(New ToolStripItem() {ADDToolStripMenuItem})
-        ContextMenuStrip2.Name = "ContextMenuStrip2"
-        ContextMenuStrip2.Size = New Size(99, 26)
-        ' 
-        ' ADDToolStripMenuItem
-        ' 
-        ADDToolStripMenuItem.Name = "ADDToolStripMenuItem"
-        ADDToolStripMenuItem.Size = New Size(98, 22)
-        ADDToolStripMenuItem.Text = "ADD"
-        ' 
-        ' cbAddMoreCM
-        ' 
-        cbAddMoreCM.FormattingEnabled = True
-        cbAddMoreCM.Location = New Point(15, 177)
-        cbAddMoreCM.Name = "cbAddMoreCM"
-        cbAddMoreCM.Size = New Size(87, 23)
-        cbAddMoreCM.TabIndex = 15
-        ' 
-        ' btnAddCMToTable
-        ' 
-        btnAddCMToTable.BackColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        btnAddCMToTable.BackgroundImageLayout = ImageLayout.None
-        btnAddCMToTable.Cursor = Cursors.Hand
-        btnAddCMToTable.FlatAppearance.BorderColor = Color.FromArgb(CByte(230), CByte(230), CByte(0))
-        btnAddCMToTable.FlatAppearance.BorderSize = 0
-        btnAddCMToTable.FlatAppearance.MouseDownBackColor = Color.White
-        btnAddCMToTable.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(77), CByte(153), CByte(0))
-        btnAddCMToTable.FlatStyle = FlatStyle.Flat
-        btnAddCMToTable.IconChar = FontAwesome.Sharp.IconChar.UserLock
-        btnAddCMToTable.IconColor = Color.White
-        btnAddCMToTable.IconFont = FontAwesome.Sharp.IconFont.Auto
-        btnAddCMToTable.IconSize = 25
-        btnAddCMToTable.Location = New Point(128, 177)
-        btnAddCMToTable.Name = "btnAddCMToTable"
-        btnAddCMToTable.Size = New Size(111, 29)
-        btnAddCMToTable.TabIndex = 14
-        btnAddCMToTable.TextAlign = ContentAlignment.MiddleRight
-        btnAddCMToTable.UseVisualStyleBackColor = False
-        ' 
-        ' btnAddAgainCM
-        ' 
-        btnAddAgainCM.BackColor = Color.White
-        btnAddAgainCM.Cursor = Cursors.Hand
-        btnAddAgainCM.FlatAppearance.BorderSize = 0
-        btnAddAgainCM.FlatAppearance.MouseDownBackColor = Color.White
-        btnAddAgainCM.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(168), CByte(155), CByte(50))
-        btnAddAgainCM.FlatStyle = FlatStyle.Flat
-        btnAddAgainCM.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft
-        btnAddAgainCM.IconColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        btnAddAgainCM.IconFont = FontAwesome.Sharp.IconFont.Auto
-        btnAddAgainCM.IconSize = 25
-        btnAddAgainCM.Location = New Point(106, 108)
-        btnAddAgainCM.Name = "btnAddAgainCM"
-        btnAddAgainCM.Size = New Size(40, 40)
-        btnAddAgainCM.TabIndex = 9
-        btnAddAgainCM.UseVisualStyleBackColor = False
-        ' 
-        ' Label11
-        ' 
-        Label11.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Label11.Location = New Point(152, 27)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(66, 15)
-        Label11.TabIndex = 8
-        Label11.Text = "OUT"
-        ' 
-        ' lbRemovedCM
-        ' 
-        lbRemovedCM.BackColor = SystemColors.ButtonHighlight
-        lbRemovedCM.Cursor = Cursors.Hand
-        lbRemovedCM.FormattingEnabled = True
-        lbRemovedCM.ItemHeight = 15
-        lbRemovedCM.Location = New Point(152, 45)
-        lbRemovedCM.Name = "lbRemovedCM"
-        lbRemovedCM.Size = New Size(87, 124)
-        lbRemovedCM.TabIndex = 7
-        ' 
-        ' Label10
-        ' 
-        Label10.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Label10.Location = New Point(15, 27)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(66, 15)
-        Label10.TabIndex = 6
-        Label10.Text = "IN"
-        ' 
-        ' btnCMRemove
-        ' 
-        btnCMRemove.BackColor = Color.White
-        btnCMRemove.Cursor = Cursors.Hand
-        btnCMRemove.FlatAppearance.BorderSize = 0
-        btnCMRemove.FlatAppearance.MouseDownBackColor = Color.White
-        btnCMRemove.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
-        btnCMRemove.FlatStyle = FlatStyle.Flat
-        btnCMRemove.IconChar = FontAwesome.Sharp.IconChar.ArrowRight
-        btnCMRemove.IconColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        btnCMRemove.IconFont = FontAwesome.Sharp.IconFont.Auto
-        btnCMRemove.IconSize = 25
-        btnCMRemove.Location = New Point(106, 62)
-        btnCMRemove.Name = "btnCMRemove"
-        btnCMRemove.Size = New Size(40, 40)
-        btnCMRemove.TabIndex = 3
-        btnCMRemove.UseVisualStyleBackColor = False
-        ' 
-        ' lbCM
-        ' 
-        lbCM.AllowDrop = True
-        lbCM.BackColor = SystemColors.ButtonHighlight
-        lbCM.Cursor = Cursors.Hand
-        lbCM.FormattingEnabled = True
-        lbCM.ItemHeight = 15
-        lbCM.Location = New Point(15, 45)
-        lbCM.Name = "lbCM"
-        lbCM.Size = New Size(87, 124)
-        lbCM.TabIndex = 2
-        ' 
-        ' Panel8
-        ' 
-        Panel8.BackColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        Panel8.Controls.Add(IconPictureBox2)
-        Panel8.Controls.Add(Label8)
-        Panel8.Dock = DockStyle.Top
-        Panel8.Location = New Point(0, 0)
-        Panel8.Name = "Panel8"
-        Panel8.Size = New Size(255, 23)
-        Panel8.TabIndex = 1
-        ' 
-        ' IconPictureBox2
-        ' 
-        IconPictureBox2.BackColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        IconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.PlusSquare
-        IconPictureBox2.IconColor = Color.White
-        IconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto
-        IconPictureBox2.IconSize = 21
-        IconPictureBox2.Location = New Point(230, 3)
-        IconPictureBox2.Name = "IconPictureBox2"
-        IconPictureBox2.Size = New Size(21, 26)
-        IconPictureBox2.TabIndex = 9
-        IconPictureBox2.TabStop = False
-        ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        Label8.ForeColor = Color.Transparent
-        Label8.Location = New Point(5, 4)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(68, 15)
-        Label8.TabIndex = 0
-        Label8.Text = "CREWMAN"
-        ' 
-        ' Panel3
-        ' 
-        Panel3.BackColor = Color.WhiteSmoke
-        Panel3.Controls.Add(btnRefresh)
-        Panel3.Controls.Add(btnPlaneAdd)
-        Panel3.Controls.Add(lblShift)
-        Panel3.Controls.Add(lblDay)
-        Panel3.Controls.Add(cbShiftTime)
-        Panel3.Controls.Add(dtpDate)
-        Panel3.Controls.Add(Label5)
-        Panel3.Controls.Add(Panel4)
-        Panel3.Controls.Add(Label3)
-        Panel3.Controls.Add(Label4)
-        Panel3.Controls.Add(Label2)
-        Panel3.Location = New Point(55, 47)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(255, 187)
-        Panel3.TabIndex = 5
-        ' 
-        ' btnRefresh
-        ' 
-        btnRefresh.BackColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        btnRefresh.BackgroundImageLayout = ImageLayout.None
-        btnRefresh.Cursor = Cursors.Hand
-        btnRefresh.FlatAppearance.BorderColor = Color.FromArgb(CByte(230), CByte(230), CByte(0))
-        btnRefresh.FlatAppearance.BorderSize = 0
-        btnRefresh.FlatAppearance.MouseDownBackColor = Color.White
-        btnRefresh.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(77), CByte(153), CByte(0))
-        btnRefresh.FlatStyle = FlatStyle.Flat
-        btnRefresh.IconChar = FontAwesome.Sharp.IconChar.Retweet
-        btnRefresh.IconColor = Color.White
-        btnRefresh.IconFont = FontAwesome.Sharp.IconFont.Auto
-        btnRefresh.IconSize = 20
-        btnRefresh.Location = New Point(201, 144)
-        btnRefresh.Name = "btnRefresh"
-        btnRefresh.Size = New Size(29, 29)
-        btnRefresh.TabIndex = 14
-        btnRefresh.TextAlign = ContentAlignment.MiddleRight
-        btnRefresh.UseVisualStyleBackColor = False
-        ' 
-        ' btnPlaneAdd
-        ' 
-        btnPlaneAdd.BackColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        btnPlaneAdd.BackgroundImageLayout = ImageLayout.None
-        btnPlaneAdd.Cursor = Cursors.Hand
-        btnPlaneAdd.FlatAppearance.BorderColor = Color.FromArgb(CByte(230), CByte(230), CByte(0))
-        btnPlaneAdd.FlatAppearance.BorderSize = 0
-        btnPlaneAdd.FlatAppearance.MouseDownBackColor = Color.White
-        btnPlaneAdd.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(77), CByte(153), CByte(0))
-        btnPlaneAdd.FlatStyle = FlatStyle.Flat
-        btnPlaneAdd.IconChar = FontAwesome.Sharp.IconChar.PlaneLock
-        btnPlaneAdd.IconColor = Color.White
-        btnPlaneAdd.IconFont = FontAwesome.Sharp.IconFont.Auto
-        btnPlaneAdd.IconSize = 25
-        btnPlaneAdd.Location = New Point(90, 144)
-        btnPlaneAdd.Name = "btnPlaneAdd"
-        btnPlaneAdd.Size = New Size(107, 29)
-        btnPlaneAdd.TabIndex = 13
-        btnPlaneAdd.TextAlign = ContentAlignment.MiddleRight
-        btnPlaneAdd.UseVisualStyleBackColor = False
-        ' 
-        ' lblShift
-        ' 
-        lblShift.BackColor = Color.White
-        lblShift.BorderStyle = BorderStyle.FixedSingle
-        lblShift.FlatStyle = FlatStyle.Flat
-        lblShift.Location = New Point(90, 114)
-        lblShift.Name = "lblShift"
-        lblShift.Size = New Size(140, 23)
-        lblShift.TabIndex = 12
-        ' 
-        ' lblDay
-        ' 
-        lblDay.BackColor = SystemColors.Window
-        lblDay.BorderStyle = BorderStyle.FixedSingle
-        lblDay.Location = New Point(90, 87)
-        lblDay.Name = "lblDay"
-        lblDay.Size = New Size(140, 21)
-        lblDay.TabIndex = 11
-        ' 
-        ' cbShiftTime
-        ' 
-        cbShiftTime.FormattingEnabled = True
-        cbShiftTime.Location = New Point(90, 58)
-        cbShiftTime.Name = "cbShiftTime"
-        cbShiftTime.Size = New Size(140, 23)
-        cbShiftTime.TabIndex = 10
-        ' 
-        ' dtpDate
-        ' 
-        dtpDate.Cursor = Cursors.Hand
-        dtpDate.Format = DateTimePickerFormat.Short
-        dtpDate.Location = New Point(91, 28)
-        dtpDate.MaxDate = New Date(2123, 3, 17, 0, 0, 0, 0)
-        dtpDate.MinDate = New Date(2000, 1, 1, 0, 0, 0, 0)
-        dtpDate.Name = "dtpDate"
-        dtpDate.Size = New Size(139, 23)
-        dtpDate.TabIndex = 9
-        dtpDate.Value = New Date(2023, 3, 17, 0, 0, 0, 0)
-        ' 
-        ' Label5
-        ' 
-        Label5.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Label5.Location = New Point(12, 118)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(66, 15)
-        Label5.TabIndex = 8
-        Label5.Text = "SHIFT "
-        ' 
-        ' Panel4
-        ' 
-        Panel4.BackColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        Panel4.Controls.Add(IconPictureBox1)
-        Panel4.Controls.Add(Label6)
-        Panel4.Dock = DockStyle.Top
-        Panel4.Location = New Point(0, 0)
-        Panel4.Name = "Panel4"
-        Panel4.Size = New Size(255, 23)
-        Panel4.TabIndex = 0
-        ' 
-        ' IconPictureBox1
-        ' 
-        IconPictureBox1.BackColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.CalendarCheck
-        IconPictureBox1.IconColor = Color.White
-        IconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto
-        IconPictureBox1.IconSize = 21
-        IconPictureBox1.Location = New Point(230, 1)
-        IconPictureBox1.Name = "IconPictureBox1"
-        IconPictureBox1.Size = New Size(21, 26)
-        IconPictureBox1.TabIndex = 9
-        IconPictureBox1.TabStop = False
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        Label6.ForeColor = Color.Transparent
-        Label6.Location = New Point(5, 4)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(71, 15)
-        Label6.TabIndex = 0
-        Label6.Text = "SHIFT TIME"
-        ' 
-        ' Label3
-        ' 
-        Label3.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Label3.Location = New Point(12, 62)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(66, 15)
-        Label3.TabIndex = 6
-        Label3.Text = "SHIFT TIME"
-        ' 
-        ' Label4
-        ' 
-        Label4.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Label4.Location = New Point(12, 91)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(66, 13)
-        Label4.TabIndex = 7
-        Label4.Text = "DAY"
-        ' 
-        ' Label2
-        ' 
-        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Label2.Location = New Point(12, 32)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(66, 15)
-        Label2.TabIndex = 5
-        Label2.Text = "DATE"
-        ' 
-        ' Panel2
-        ' 
-        Panel2.BackColor = SystemColors.ActiveCaption
-        Panel2.Controls.Add(Panel11)
-        Panel2.Controls.Add(Panel5)
-        Panel2.Dock = DockStyle.Fill
-        Panel2.ForeColor = Color.White
-        Panel2.Location = New Point(320, 0)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(713, 752)
-        Panel2.TabIndex = 6
-        ' 
-        ' Panel11
-        ' 
-        Panel11.BackColor = SystemColors.ControlLight
-        Panel11.Controls.Add(Panel9)
-        Panel11.Controls.Add(Panel12)
-        Panel11.Dock = DockStyle.Fill
-        Panel11.Location = New Point(0, 56)
-        Panel11.Name = "Panel11"
-        Panel11.Size = New Size(713, 696)
-        Panel11.TabIndex = 2
-        ' 
-        ' Panel9
-        ' 
-        Panel9.BackColor = SystemColors.ActiveCaption
-        Panel9.Controls.Add(dgvMain)
-        Panel9.Dock = DockStyle.Fill
-        Panel9.ForeColor = Color.Black
-        Panel9.Location = New Point(0, 0)
-        Panel9.Name = "Panel9"
-        Panel9.Padding = New Padding(5)
-        Panel9.Size = New Size(463, 696)
-        Panel9.TabIndex = 2
-        ' 
-        ' dgvMain
-        ' 
-        dgvMain.AllowUserToAddRows = False
-        dgvMain.AllowUserToDeleteRows = False
-        dgvMain.BackgroundColor = SystemColors.ActiveCaption
-        dgvMain.BorderStyle = BorderStyle.None
-        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = SystemColors.Control
-        DataGridViewCellStyle1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        DataGridViewCellStyle1.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
-        dgvMain.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        dgvMain.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvMain.Columns.AddRange(New DataGridViewColumn() {Column2, Column1, noo, fli, Column10, Column4, lines, Column6, Column7, Column8, Column9, Column3, Column5})
-        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = Color.WhiteSmoke
-        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle2.ForeColor = Color.Black
-        DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.False
-        dgvMain.DefaultCellStyle = DataGridViewCellStyle2
-        dgvMain.Dock = DockStyle.Fill
-        dgvMain.Location = New Point(5, 5)
-        dgvMain.Name = "dgvMain"
-        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = SystemColors.Control
-        DataGridViewCellStyle3.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle3.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.True
-        dgvMain.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
-        dgvMain.RowHeadersWidth = 4
-        dgvMain.RowTemplate.Height = 25
-        dgvMain.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        dgvMain.Size = New Size(453, 686)
-        dgvMain.TabIndex = 0
-        ' 
-        ' Column2
-        ' 
-        Column2.HeaderText = ""
-        Column2.Name = "Column2"
-        Column2.ReadOnly = True
-        Column2.Resizable = DataGridViewTriState.True
-        Column2.SortMode = DataGridViewColumnSortMode.Automatic
-        Column2.Width = 20
-        ' 
-        ' Column1
-        ' 
-        Column1.HeaderText = "BAY NO"
-        Column1.Name = "Column1"
-        Column1.ReadOnly = True
-        Column1.SortMode = DataGridViewColumnSortMode.NotSortable
-        ' 
-        ' noo
-        ' 
-        noo.HeaderText = "NO"
-        noo.Name = "noo"
-        noo.ReadOnly = True
-        noo.SortMode = DataGridViewColumnSortMode.NotSortable
-        noo.Width = 40
-        ' 
-        ' fli
-        ' 
-        fli.HeaderText = "FLIGHT"
-        fli.Name = "fli"
-        fli.ReadOnly = True
-        fli.SortMode = DataGridViewColumnSortMode.NotSortable
-        ' 
-        ' Column10
-        ' 
-        Column10.HeaderText = "ROUTE"
-        Column10.Name = "Column10"
-        Column10.ReadOnly = True
-        Column10.SortMode = DataGridViewColumnSortMode.NotSortable
-        Column10.Width = 70
-        ' 
-        ' Column4
-        ' 
-        Column4.HeaderText = "E.T.A"
-        Column4.Name = "Column4"
-        Column4.ReadOnly = True
-        ' 
-        ' lines
-        ' 
-        lines.HeaderText = "AIRLINE"
-        lines.Name = "lines"
-        lines.ReadOnly = True
-        lines.SortMode = DataGridViewColumnSortMode.NotSortable
-        ' 
-        ' Column6
-        ' 
-        Column6.HeaderText = "RIC"
-        Column6.Name = "Column6"
-        Column6.Resizable = DataGridViewTriState.True
-        Column6.Width = 70
-        ' 
-        ' Column7
-        ' 
-        Column7.HeaderText = "OPERATOR"
-        Column7.Name = "Column7"
-        Column7.Resizable = DataGridViewTriState.True
-        Column7.Width = 70
-        ' 
-        ' Column8
-        ' 
-        Column8.HeaderText = "CREWMAN"
-        Column8.Name = "Column8"
-        Column8.Resizable = DataGridViewTriState.True
-        Column8.Width = 70
-        ' 
-        ' Column9
-        ' 
-        Column9.HeaderText = "REMARKS"
-        Column9.Name = "Column9"
-        Column9.ReadOnly = True
-        Column9.SortMode = DataGridViewColumnSortMode.NotSortable
-        Column9.Width = 80
-        ' 
-        ' Column3
-        ' 
-        Column3.HeaderText = "Cancel"
-        Column3.Name = "Column3"
-        Column3.Resizable = DataGridViewTriState.True
-        Column3.Width = 50
-        ' 
-        ' Column5
-        ' 
-        Column5.HeaderText = "DATE"
-        Column5.Name = "Column5"
-        Column5.ReadOnly = True
-        ' 
-        ' Panel12
-        ' 
-        Panel12.BackColor = SystemColors.ControlLight
-        Panel12.Controls.Add(tbRoute)
-        Panel12.Controls.Add(Label18)
-        Panel12.Controls.Add(lblETAShow)
-        Panel12.Controls.Add(Label16)
-        Panel12.Controls.Add(Label17)
-        Panel12.Controls.Add(lblSelectedFlight)
-        Panel12.Controls.Add(cbOPerater)
-        Panel12.Controls.Add(btnUpdateData)
-        Panel12.Controls.Add(Label19)
-        Panel12.Controls.Add(cboxremarks)
-        Panel12.Controls.Add(tbBayNo)
-        Panel12.Controls.Add(Label15)
-        Panel12.Controls.Add(Label14)
-        Panel12.Controls.Add(btnResizePnl)
-        Panel12.Dock = DockStyle.Right
-        Panel12.ForeColor = Color.Black
-        Panel12.Location = New Point(463, 0)
-        Panel12.Name = "Panel12"
-        Panel12.Padding = New Padding(3)
-        Panel12.Size = New Size(250, 696)
-        Panel12.TabIndex = 2
-        ' 
-        ' tbRoute
-        ' 
-        tbRoute.Location = New Point(43, 196)
-        tbRoute.Name = "tbRoute"
-        tbRoute.Size = New Size(165, 23)
-        tbRoute.TabIndex = 37
-        ' 
-        ' Label18
-        ' 
-        Label18.AutoSize = True
-        Label18.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        Label18.Location = New Point(41, 173)
-        Label18.Name = "Label18"
-        Label18.Size = New Size(46, 15)
-        Label18.TabIndex = 36
-        Label18.Text = "ROUTE"
-        ' 
-        ' lblETAShow
-        ' 
-        lblETAShow.AutoSize = True
-        lblETAShow.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        lblETAShow.Location = New Point(120, 85)
-        lblETAShow.Name = "lblETAShow"
-        lblETAShow.Size = New Size(33, 15)
-        lblETAShow.TabIndex = 35
-        lblETAShow.Text = "E.T.A"
-        ' 
-        ' Label16
-        ' 
-        Label16.AutoSize = True
-        Label16.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        Label16.Location = New Point(92, 85)
-        Label16.Name = "Label16"
-        Label16.Size = New Size(27, 15)
-        Label16.TabIndex = 34
-        Label16.Text = "AT :"
-        ' 
-        ' Label17
-        ' 
-        Label17.AutoSize = True
-        Label17.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        Label17.Location = New Point(40, 62)
-        Label17.Name = "Label17"
-        Label17.Size = New Size(48, 15)
-        Label17.TabIndex = 31
-        Label17.Text = "FLIGHT"
-        ' 
-        ' lblSelectedFlight
-        ' 
-        lblSelectedFlight.BackColor = SystemColors.ControlLightLight
-        lblSelectedFlight.FlatStyle = FlatStyle.Flat
-        lblSelectedFlight.Location = New Point(94, 58)
-        lblSelectedFlight.Name = "lblSelectedFlight"
-        lblSelectedFlight.Size = New Size(113, 23)
-        lblSelectedFlight.TabIndex = 30
-        lblSelectedFlight.Text = "Selected Flight"
-        lblSelectedFlight.TextAlign = ContentAlignment.MiddleCenter
-        ' 
-        ' cbOPerater
-        ' 
-        cbOPerater.FormattingEnabled = True
-        cbOPerater.Location = New Point(42, 258)
-        cbOPerater.Name = "cbOPerater"
-        cbOPerater.Size = New Size(166, 23)
-        cbOPerater.TabIndex = 29
-        ' 
-        ' btnUpdateData
-        ' 
-        btnUpdateData.BackColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        btnUpdateData.BackgroundImageLayout = ImageLayout.None
-        btnUpdateData.Cursor = Cursors.Hand
-        btnUpdateData.FlatAppearance.BorderColor = Color.FromArgb(CByte(230), CByte(230), CByte(0))
-        btnUpdateData.FlatAppearance.BorderSize = 0
-        btnUpdateData.FlatAppearance.MouseDownBackColor = Color.White
-        btnUpdateData.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(77), CByte(153), CByte(0))
-        btnUpdateData.FlatStyle = FlatStyle.Flat
-        btnUpdateData.IconChar = FontAwesome.Sharp.IconChar.PenToSquare
-        btnUpdateData.IconColor = Color.White
-        btnUpdateData.IconFont = FontAwesome.Sharp.IconFont.Auto
-        btnUpdateData.IconSize = 25
-        btnUpdateData.Location = New Point(43, 361)
-        btnUpdateData.Name = "btnUpdateData"
-        btnUpdateData.Size = New Size(166, 29)
-        btnUpdateData.TabIndex = 14
-        btnUpdateData.TextAlign = ContentAlignment.MiddleRight
-        btnUpdateData.UseVisualStyleBackColor = False
-        ' 
-        ' Label19
-        ' 
-        Label19.AutoSize = True
-        Label19.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        Label19.Location = New Point(40, 296)
-        Label19.Name = "Label19"
-        Label19.Size = New Size(63, 15)
-        Label19.TabIndex = 12
-        Label19.Text = "REMARKS"
-        ' 
-        ' cboxremarks
-        ' 
-        cboxremarks.FormattingEnabled = True
-        cboxremarks.Location = New Point(43, 319)
-        cboxremarks.Name = "cboxremarks"
-        cboxremarks.Size = New Size(166, 23)
-        cboxremarks.TabIndex = 11
-        ' 
-        ' tbBayNo
-        ' 
-        tbBayNo.Location = New Point(43, 135)
-        tbBayNo.Name = "tbBayNo"
-        tbBayNo.Size = New Size(165, 23)
-        tbBayNo.TabIndex = 3
-        ' 
-        ' Label15
-        ' 
-        Label15.AutoSize = True
-        Label15.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        Label15.Location = New Point(40, 235)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(68, 15)
-        Label15.TabIndex = 2
-        Label15.Text = "OPERATOR"
-        ' 
-        ' Label14
-        ' 
-        Label14.AutoSize = True
-        Label14.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        Label14.Location = New Point(41, 112)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(50, 15)
-        Label14.TabIndex = 1
-        Label14.Text = "BAY NO"
-        ' 
-        ' btnResizePnl
-        ' 
-        btnResizePnl.BackColor = Color.FromArgb(CByte(0), CByte(40), CByte(77))
-        btnResizePnl.Dock = DockStyle.Top
-        btnResizePnl.FlatAppearance.BorderSize = 0
-        btnResizePnl.FlatStyle = FlatStyle.Flat
-        btnResizePnl.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        btnResizePnl.ForeColor = Color.WhiteSmoke
-        btnResizePnl.IconChar = FontAwesome.Sharp.IconChar.AngleRight
-        btnResizePnl.IconColor = Color.WhiteSmoke
-        btnResizePnl.IconFont = FontAwesome.Sharp.IconFont.Auto
-        btnResizePnl.IconSize = 20
-        btnResizePnl.ImageAlign = ContentAlignment.TopLeft
-        btnResizePnl.Location = New Point(3, 3)
-        btnResizePnl.Margin = New Padding(0)
-        btnResizePnl.MaximumSize = New Size(244, 40)
-        btnResizePnl.Name = "btnResizePnl"
-        btnResizePnl.Size = New Size(244, 40)
-        btnResizePnl.TabIndex = 0
-        btnResizePnl.Text = "     UPDATE TABLE ROWS"
-        btnResizePnl.TextAlign = ContentAlignment.MiddleLeft
-        btnResizePnl.TextImageRelation = TextImageRelation.ImageBeforeText
-        btnResizePnl.UseVisualStyleBackColor = False
-        ' 
-        ' Panel5
-        ' 
-        Panel5.BackColor = SystemColors.ActiveCaption
-        Panel5.Controls.Add(lbltoday)
-        Panel5.Controls.Add(lblTime)
-        Panel5.Controls.Add(Panel10)
-        Panel5.Dock = DockStyle.Top
-        Panel5.ForeColor = Color.Black
-        Panel5.Location = New Point(0, 0)
-        Panel5.Name = "Panel5"
-        Panel5.Padding = New Padding(10)
-        Panel5.Size = New Size(713, 56)
-        Panel5.TabIndex = 0
-        ' 
-        ' lbltoday
-        ' 
-        lbltoday.AutoSize = True
-        lbltoday.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        lbltoday.ForeColor = Color.Black
-        lbltoday.Location = New Point(24, 10)
-        lbltoday.Name = "lbltoday"
-        lbltoday.Size = New Size(73, 15)
-        lbltoday.TabIndex = 6
-        lbltoday.Text = "22/03/2023"
-        ' 
-        ' lblTime
-        ' 
-        lblTime.AutoSize = True
-        lblTime.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        lblTime.ForeColor = Color.Black
-        lblTime.Location = New Point(24, 31)
-        lblTime.Name = "lblTime"
-        lblTime.Size = New Size(35, 15)
-        lblTime.TabIndex = 5
-        lblTime.Text = "TIME"
-        ' 
-        ' Panel10
-        ' 
-        Panel10.Controls.Add(btnPrint)
-        Panel10.Dock = DockStyle.Right
-        Panel10.Location = New Point(503, 10)
-        Panel10.Name = "Panel10"
-        Panel10.Size = New Size(200, 36)
-        Panel10.TabIndex = 4
-        ' 
-        ' btnPrint
-        ' 
-        btnPrint.BackColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
-        btnPrint.FlatAppearance.BorderSize = 0
-        btnPrint.FlatAppearance.MouseDownBackColor = Color.White
-        btnPrint.FlatAppearance.MouseOverBackColor = Color.Maroon
-        btnPrint.FlatStyle = FlatStyle.Flat
-        btnPrint.IconChar = FontAwesome.Sharp.IconChar.Print
-        btnPrint.IconColor = Color.White
-        btnPrint.IconFont = FontAwesome.Sharp.IconFont.Auto
-        btnPrint.IconSize = 25
-        btnPrint.Location = New Point(61, 1)
-        btnPrint.Name = "btnPrint"
-        btnPrint.Size = New Size(138, 34)
-        btnPrint.TabIndex = 0
-        btnPrint.UseVisualStyleBackColor = False
-        ' 
-        ' Timer1
-        ' 
-        ' 
-        ' ContextMenuStrip1
-        ' 
-        ContextMenuStrip1.Name = "ContextMenuStrip1"
-        ContextMenuStrip1.Size = New Size(61, 4)
-        ' 
-        ' UserControlTimeTable
-        ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
-        AutoScaleMode = AutoScaleMode.Font
-        BackColor = SystemColors.ControlLight
-        Controls.Add(Panel2)
-        Controls.Add(Panel1)
-        Name = "UserControlTimeTable"
-        Size = New Size(1033, 752)
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
-        Panel7.ResumeLayout(False)
-        Panel6.ResumeLayout(False)
-        pnlRIC.ResumeLayout(False)
-        pnlRIC.PerformLayout()
-        CType(IconPictureBox3, ComponentModel.ISupportInitialize).EndInit()
-        pnlCM.ResumeLayout(False)
-        ContextMenuStrip2.ResumeLayout(False)
-        Panel8.ResumeLayout(False)
-        Panel8.PerformLayout()
-        CType(IconPictureBox2, ComponentModel.ISupportInitialize).EndInit()
-        Panel3.ResumeLayout(False)
-        Panel4.ResumeLayout(False)
-        Panel4.PerformLayout()
-        CType(IconPictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        Panel2.ResumeLayout(False)
-        Panel11.ResumeLayout(False)
-        Panel9.ResumeLayout(False)
-        CType(dgvMain, ComponentModel.ISupportInitialize).EndInit()
-        Panel12.ResumeLayout(False)
-        Panel12.PerformLayout()
-        Panel5.ResumeLayout(False)
-        Panel5.PerformLayout()
-        Panel10.ResumeLayout(False)
-        ResumeLayout(False)
+        Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.cbGroup = New System.Windows.Forms.ComboBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.cbAddMoreRIC = New System.Windows.Forms.ComboBox()
+        Me.btnAddRICToTable = New FontAwesome.Sharp.IconButton()
+        Me.btnAddAgainRIC = New FontAwesome.Sharp.IconButton()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.lbRemovedRIC = New System.Windows.Forms.ListBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.btnRICRemove = New FontAwesome.Sharp.IconButton()
+        Me.lbRIC = New System.Windows.Forms.ListBox()
+        Me.pnlRIC = New System.Windows.Forms.Panel()
+        Me.IconPictureBox3 = New FontAwesome.Sharp.IconPictureBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.pnlCM = New System.Windows.Forms.Panel()
+        Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ADDToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.cbAddMoreCM = New System.Windows.Forms.ComboBox()
+        Me.btnAddCMToTable = New FontAwesome.Sharp.IconButton()
+        Me.btnAddAgainCM = New FontAwesome.Sharp.IconButton()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.lbRemovedCM = New System.Windows.Forms.ListBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.btnCMRemove = New FontAwesome.Sharp.IconButton()
+        Me.lbCM = New System.Windows.Forms.ListBox()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.IconPictureBox2 = New FontAwesome.Sharp.IconPictureBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.btnRefresh = New FontAwesome.Sharp.IconButton()
+        Me.btnPlaneAdd = New FontAwesome.Sharp.IconButton()
+        Me.lblShift = New System.Windows.Forms.Label()
+        Me.lblDay = New System.Windows.Forms.Label()
+        Me.cbShiftTime = New System.Windows.Forms.ComboBox()
+        Me.dtpDate = New System.Windows.Forms.DateTimePicker()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.dgvMain = New System.Windows.Forms.DataGridView()
+        Me.Column2 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.noo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.fli = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.lines = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.Column8 = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.tbRoute = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.lblETAShow = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.lblSelectedFlight = New System.Windows.Forms.Label()
+        Me.cbOPerater = New System.Windows.Forms.ComboBox()
+        Me.btnUpdateData = New FontAwesome.Sharp.IconButton()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.cboxremarks = New System.Windows.Forms.ComboBox()
+        Me.tbBayNo = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.btnResizePnl = New FontAwesome.Sharp.IconButton()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.lbltoday = New System.Windows.Forms.Label()
+        Me.lblTime = New System.Windows.Forms.Label()
+        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.btnPrint = New FontAwesome.Sharp.IconButton()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.Panel1.SuspendLayout()
+        Me.Panel7.SuspendLayout()
+        Me.Panel6.SuspendLayout()
+        Me.pnlRIC.SuspendLayout()
+        CType(Me.IconPictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlCM.SuspendLayout()
+        Me.ContextMenuStrip2.SuspendLayout()
+        Me.Panel8.SuspendLayout()
+        CType(Me.IconPictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel3.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
+        Me.Panel11.SuspendLayout()
+        Me.Panel9.SuspendLayout()
+        CType(Me.dgvMain, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel12.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        Me.Panel10.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(50, 12)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(266, 24)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "DAILY WORK SCHEDULE"
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Panel7)
+        Me.Panel1.Controls.Add(Me.Panel6)
+        Me.Panel1.Controls.Add(Me.pnlCM)
+        Me.Panel1.Controls.Add(Me.Panel3)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(320, 752)
+        Me.Panel1.TabIndex = 5
+        '
+        'Panel7
+        '
+        Me.Panel7.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Panel7.Controls.Add(Me.cbGroup)
+        Me.Panel7.Controls.Add(Me.Label7)
+        Me.Panel7.Location = New System.Drawing.Point(55, 240)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(255, 48)
+        Me.Panel7.TabIndex = 7
+        '
+        'cbGroup
+        '
+        Me.cbGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbGroup.FormattingEnabled = True
+        Me.cbGroup.Location = New System.Drawing.Point(106, 14)
+        Me.cbGroup.Name = "cbGroup"
+        Me.cbGroup.Size = New System.Drawing.Size(121, 23)
+        Me.cbGroup.TabIndex = 1
+        '
+        'Label7
+        '
+        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(0, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(76, 48)
+        Me.Label7.TabIndex = 0
+        Me.Label7.Text = "GROUP"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel6
+        '
+        Me.Panel6.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Panel6.Controls.Add(Me.cbAddMoreRIC)
+        Me.Panel6.Controls.Add(Me.btnAddRICToTable)
+        Me.Panel6.Controls.Add(Me.btnAddAgainRIC)
+        Me.Panel6.Controls.Add(Me.Label12)
+        Me.Panel6.Controls.Add(Me.lbRemovedRIC)
+        Me.Panel6.Controls.Add(Me.Label13)
+        Me.Panel6.Controls.Add(Me.btnRICRemove)
+        Me.Panel6.Controls.Add(Me.lbRIC)
+        Me.Panel6.Controls.Add(Me.pnlRIC)
+        Me.Panel6.Location = New System.Drawing.Point(56, 515)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(255, 217)
+        Me.Panel6.TabIndex = 7
+        '
+        'cbAddMoreRIC
+        '
+        Me.cbAddMoreRIC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbAddMoreRIC.FormattingEnabled = True
+        Me.cbAddMoreRIC.Location = New System.Drawing.Point(14, 177)
+        Me.cbAddMoreRIC.Name = "cbAddMoreRIC"
+        Me.cbAddMoreRIC.Size = New System.Drawing.Size(87, 23)
+        Me.cbAddMoreRIC.TabIndex = 16
+        '
+        'btnAddRICToTable
+        '
+        Me.btnAddRICToTable.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnAddRICToTable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnAddRICToTable.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAddRICToTable.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnAddRICToTable.FlatAppearance.BorderSize = 0
+        Me.btnAddRICToTable.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnAddRICToTable.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnAddRICToTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAddRICToTable.IconChar = FontAwesome.Sharp.IconChar.UserLock
+        Me.btnAddRICToTable.IconColor = System.Drawing.Color.White
+        Me.btnAddRICToTable.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnAddRICToTable.IconSize = 25
+        Me.btnAddRICToTable.Location = New System.Drawing.Point(127, 177)
+        Me.btnAddRICToTable.Name = "btnAddRICToTable"
+        Me.btnAddRICToTable.Size = New System.Drawing.Size(111, 29)
+        Me.btnAddRICToTable.TabIndex = 21
+        Me.btnAddRICToTable.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnAddRICToTable.UseVisualStyleBackColor = False
+        '
+        'btnAddAgainRIC
+        '
+        Me.btnAddAgainRIC.BackColor = System.Drawing.Color.White
+        Me.btnAddAgainRIC.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAddAgainRIC.FlatAppearance.BorderSize = 0
+        Me.btnAddAgainRIC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnAddAgainRIC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnAddAgainRIC.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAddAgainRIC.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft
+        Me.btnAddAgainRIC.IconColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnAddAgainRIC.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnAddAgainRIC.IconSize = 25
+        Me.btnAddAgainRIC.Location = New System.Drawing.Point(106, 108)
+        Me.btnAddAgainRIC.Name = "btnAddAgainRIC"
+        Me.btnAddAgainRIC.Size = New System.Drawing.Size(40, 40)
+        Me.btnAddAgainRIC.TabIndex = 20
+        Me.btnAddAgainRIC.UseVisualStyleBackColor = False
+        '
+        'Label12
+        '
+        Me.Label12.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label12.Location = New System.Drawing.Point(152, 27)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(66, 15)
+        Me.Label12.TabIndex = 19
+        Me.Label12.Text = "OUT"
+        '
+        'lbRemovedRIC
+        '
+        Me.lbRemovedRIC.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lbRemovedRIC.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lbRemovedRIC.FormattingEnabled = True
+        Me.lbRemovedRIC.ItemHeight = 15
+        Me.lbRemovedRIC.Location = New System.Drawing.Point(151, 45)
+        Me.lbRemovedRIC.Name = "lbRemovedRIC"
+        Me.lbRemovedRIC.Size = New System.Drawing.Size(87, 124)
+        Me.lbRemovedRIC.TabIndex = 18
+        '
+        'Label13
+        '
+        Me.Label13.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label13.Location = New System.Drawing.Point(14, 27)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(66, 15)
+        Me.Label13.TabIndex = 17
+        Me.Label13.Text = "IN"
+        '
+        'btnRICRemove
+        '
+        Me.btnRICRemove.BackColor = System.Drawing.Color.White
+        Me.btnRICRemove.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnRICRemove.FlatAppearance.BorderSize = 0
+        Me.btnRICRemove.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnRICRemove.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnRICRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRICRemove.IconChar = FontAwesome.Sharp.IconChar.ArrowRight
+        Me.btnRICRemove.IconColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnRICRemove.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnRICRemove.IconSize = 25
+        Me.btnRICRemove.Location = New System.Drawing.Point(106, 62)
+        Me.btnRICRemove.Name = "btnRICRemove"
+        Me.btnRICRemove.Size = New System.Drawing.Size(40, 40)
+        Me.btnRICRemove.TabIndex = 16
+        Me.btnRICRemove.UseVisualStyleBackColor = False
+        '
+        'lbRIC
+        '
+        Me.lbRIC.AllowDrop = True
+        Me.lbRIC.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lbRIC.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lbRIC.FormattingEnabled = True
+        Me.lbRIC.ItemHeight = 15
+        Me.lbRIC.Location = New System.Drawing.Point(14, 45)
+        Me.lbRIC.Name = "lbRIC"
+        Me.lbRIC.Size = New System.Drawing.Size(87, 124)
+        Me.lbRIC.TabIndex = 15
+        '
+        'pnlRIC
+        '
+        Me.pnlRIC.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.pnlRIC.Controls.Add(Me.IconPictureBox3)
+        Me.pnlRIC.Controls.Add(Me.Label9)
+        Me.pnlRIC.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlRIC.Location = New System.Drawing.Point(0, 0)
+        Me.pnlRIC.Name = "pnlRIC"
+        Me.pnlRIC.Size = New System.Drawing.Size(255, 23)
+        Me.pnlRIC.TabIndex = 2
+        '
+        'IconPictureBox3
+        '
+        Me.IconPictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.IconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.PlusSquare
+        Me.IconPictureBox3.IconColor = System.Drawing.Color.White
+        Me.IconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconPictureBox3.IconSize = 21
+        Me.IconPictureBox3.Location = New System.Drawing.Point(229, 3)
+        Me.IconPictureBox3.Name = "IconPictureBox3"
+        Me.IconPictureBox3.Size = New System.Drawing.Size(21, 26)
+        Me.IconPictureBox3.TabIndex = 9
+        Me.IconPictureBox3.TabStop = False
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label9.ForeColor = System.Drawing.Color.Transparent
+        Me.Label9.Location = New System.Drawing.Point(6, 5)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(26, 15)
+        Me.Label9.TabIndex = 0
+        Me.Label9.Text = "RIC"
+        '
+        'pnlCM
+        '
+        Me.pnlCM.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.pnlCM.ContextMenuStrip = Me.ContextMenuStrip2
+        Me.pnlCM.Controls.Add(Me.cbAddMoreCM)
+        Me.pnlCM.Controls.Add(Me.btnAddCMToTable)
+        Me.pnlCM.Controls.Add(Me.btnAddAgainCM)
+        Me.pnlCM.Controls.Add(Me.Label11)
+        Me.pnlCM.Controls.Add(Me.lbRemovedCM)
+        Me.pnlCM.Controls.Add(Me.Label10)
+        Me.pnlCM.Controls.Add(Me.btnCMRemove)
+        Me.pnlCM.Controls.Add(Me.lbCM)
+        Me.pnlCM.Controls.Add(Me.Panel8)
+        Me.pnlCM.Location = New System.Drawing.Point(55, 293)
+        Me.pnlCM.Name = "pnlCM"
+        Me.pnlCM.Size = New System.Drawing.Size(255, 217)
+        Me.pnlCM.TabIndex = 6
+        '
+        'ContextMenuStrip2
+        '
+        Me.ContextMenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ADDToolStripMenuItem})
+        Me.ContextMenuStrip2.Name = "ContextMenuStrip2"
+        Me.ContextMenuStrip2.Size = New System.Drawing.Size(99, 26)
+        '
+        'ADDToolStripMenuItem
+        '
+        Me.ADDToolStripMenuItem.Name = "ADDToolStripMenuItem"
+        Me.ADDToolStripMenuItem.Size = New System.Drawing.Size(98, 22)
+        Me.ADDToolStripMenuItem.Text = "ADD"
+        '
+        'cbAddMoreCM
+        '
+        Me.cbAddMoreCM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbAddMoreCM.FormattingEnabled = True
+        Me.cbAddMoreCM.Location = New System.Drawing.Point(15, 177)
+        Me.cbAddMoreCM.Name = "cbAddMoreCM"
+        Me.cbAddMoreCM.Size = New System.Drawing.Size(87, 23)
+        Me.cbAddMoreCM.TabIndex = 15
+        '
+        'btnAddCMToTable
+        '
+        Me.btnAddCMToTable.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnAddCMToTable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnAddCMToTable.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAddCMToTable.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnAddCMToTable.FlatAppearance.BorderSize = 0
+        Me.btnAddCMToTable.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnAddCMToTable.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnAddCMToTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAddCMToTable.IconChar = FontAwesome.Sharp.IconChar.UserLock
+        Me.btnAddCMToTable.IconColor = System.Drawing.Color.White
+        Me.btnAddCMToTable.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnAddCMToTable.IconSize = 25
+        Me.btnAddCMToTable.Location = New System.Drawing.Point(128, 177)
+        Me.btnAddCMToTable.Name = "btnAddCMToTable"
+        Me.btnAddCMToTable.Size = New System.Drawing.Size(111, 29)
+        Me.btnAddCMToTable.TabIndex = 14
+        Me.btnAddCMToTable.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnAddCMToTable.UseVisualStyleBackColor = False
+        '
+        'btnAddAgainCM
+        '
+        Me.btnAddAgainCM.BackColor = System.Drawing.Color.White
+        Me.btnAddAgainCM.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAddAgainCM.FlatAppearance.BorderSize = 0
+        Me.btnAddAgainCM.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnAddAgainCM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(168, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.btnAddAgainCM.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAddAgainCM.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft
+        Me.btnAddAgainCM.IconColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnAddAgainCM.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnAddAgainCM.IconSize = 25
+        Me.btnAddAgainCM.Location = New System.Drawing.Point(106, 108)
+        Me.btnAddAgainCM.Name = "btnAddAgainCM"
+        Me.btnAddAgainCM.Size = New System.Drawing.Size(40, 40)
+        Me.btnAddAgainCM.TabIndex = 9
+        Me.btnAddAgainCM.UseVisualStyleBackColor = False
+        '
+        'Label11
+        '
+        Me.Label11.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label11.Location = New System.Drawing.Point(152, 27)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(66, 15)
+        Me.Label11.TabIndex = 8
+        Me.Label11.Text = "OUT"
+        '
+        'lbRemovedCM
+        '
+        Me.lbRemovedCM.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lbRemovedCM.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lbRemovedCM.FormattingEnabled = True
+        Me.lbRemovedCM.ItemHeight = 15
+        Me.lbRemovedCM.Location = New System.Drawing.Point(152, 45)
+        Me.lbRemovedCM.Name = "lbRemovedCM"
+        Me.lbRemovedCM.Size = New System.Drawing.Size(87, 124)
+        Me.lbRemovedCM.TabIndex = 7
+        '
+        'Label10
+        '
+        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label10.Location = New System.Drawing.Point(15, 27)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(66, 15)
+        Me.Label10.TabIndex = 6
+        Me.Label10.Text = "IN"
+        '
+        'btnCMRemove
+        '
+        Me.btnCMRemove.BackColor = System.Drawing.Color.White
+        Me.btnCMRemove.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCMRemove.FlatAppearance.BorderSize = 0
+        Me.btnCMRemove.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnCMRemove.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnCMRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCMRemove.IconChar = FontAwesome.Sharp.IconChar.ArrowRight
+        Me.btnCMRemove.IconColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnCMRemove.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnCMRemove.IconSize = 25
+        Me.btnCMRemove.Location = New System.Drawing.Point(106, 62)
+        Me.btnCMRemove.Name = "btnCMRemove"
+        Me.btnCMRemove.Size = New System.Drawing.Size(40, 40)
+        Me.btnCMRemove.TabIndex = 3
+        Me.btnCMRemove.UseVisualStyleBackColor = False
+        '
+        'lbCM
+        '
+        Me.lbCM.AllowDrop = True
+        Me.lbCM.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lbCM.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lbCM.FormattingEnabled = True
+        Me.lbCM.ItemHeight = 15
+        Me.lbCM.Location = New System.Drawing.Point(15, 45)
+        Me.lbCM.Name = "lbCM"
+        Me.lbCM.Size = New System.Drawing.Size(87, 124)
+        Me.lbCM.TabIndex = 2
+        '
+        'Panel8
+        '
+        Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.Panel8.Controls.Add(Me.IconPictureBox2)
+        Me.Panel8.Controls.Add(Me.Label8)
+        Me.Panel8.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel8.Location = New System.Drawing.Point(0, 0)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(255, 23)
+        Me.Panel8.TabIndex = 1
+        '
+        'IconPictureBox2
+        '
+        Me.IconPictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.IconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.PlusSquare
+        Me.IconPictureBox2.IconColor = System.Drawing.Color.White
+        Me.IconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconPictureBox2.IconSize = 21
+        Me.IconPictureBox2.Location = New System.Drawing.Point(230, 3)
+        Me.IconPictureBox2.Name = "IconPictureBox2"
+        Me.IconPictureBox2.Size = New System.Drawing.Size(21, 26)
+        Me.IconPictureBox2.TabIndex = 9
+        Me.IconPictureBox2.TabStop = False
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label8.ForeColor = System.Drawing.Color.Transparent
+        Me.Label8.Location = New System.Drawing.Point(5, 4)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(68, 15)
+        Me.Label8.TabIndex = 0
+        Me.Label8.Text = "CREWMAN"
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Panel3.Controls.Add(Me.btnRefresh)
+        Me.Panel3.Controls.Add(Me.btnPlaneAdd)
+        Me.Panel3.Controls.Add(Me.lblShift)
+        Me.Panel3.Controls.Add(Me.lblDay)
+        Me.Panel3.Controls.Add(Me.cbShiftTime)
+        Me.Panel3.Controls.Add(Me.dtpDate)
+        Me.Panel3.Controls.Add(Me.Label5)
+        Me.Panel3.Controls.Add(Me.Panel4)
+        Me.Panel3.Controls.Add(Me.Label3)
+        Me.Panel3.Controls.Add(Me.Label4)
+        Me.Panel3.Controls.Add(Me.Label2)
+        Me.Panel3.Location = New System.Drawing.Point(55, 47)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(255, 187)
+        Me.Panel3.TabIndex = 5
+        '
+        'btnRefresh
+        '
+        Me.btnRefresh.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnRefresh.FlatAppearance.BorderSize = 0
+        Me.btnRefresh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnRefresh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRefresh.IconChar = FontAwesome.Sharp.IconChar.Retweet
+        Me.btnRefresh.IconColor = System.Drawing.Color.White
+        Me.btnRefresh.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnRefresh.IconSize = 20
+        Me.btnRefresh.Location = New System.Drawing.Point(201, 144)
+        Me.btnRefresh.Name = "btnRefresh"
+        Me.btnRefresh.Size = New System.Drawing.Size(29, 29)
+        Me.btnRefresh.TabIndex = 14
+        Me.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnRefresh.UseVisualStyleBackColor = False
+        '
+        'btnPlaneAdd
+        '
+        Me.btnPlaneAdd.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnPlaneAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnPlaneAdd.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPlaneAdd.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnPlaneAdd.FlatAppearance.BorderSize = 0
+        Me.btnPlaneAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnPlaneAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnPlaneAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPlaneAdd.IconChar = FontAwesome.Sharp.IconChar.PlaneLock
+        Me.btnPlaneAdd.IconColor = System.Drawing.Color.White
+        Me.btnPlaneAdd.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnPlaneAdd.IconSize = 25
+        Me.btnPlaneAdd.Location = New System.Drawing.Point(90, 144)
+        Me.btnPlaneAdd.Name = "btnPlaneAdd"
+        Me.btnPlaneAdd.Size = New System.Drawing.Size(107, 29)
+        Me.btnPlaneAdd.TabIndex = 13
+        Me.btnPlaneAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnPlaneAdd.UseVisualStyleBackColor = False
+        '
+        'lblShift
+        '
+        Me.lblShift.BackColor = System.Drawing.Color.White
+        Me.lblShift.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblShift.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblShift.Location = New System.Drawing.Point(90, 114)
+        Me.lblShift.Name = "lblShift"
+        Me.lblShift.Size = New System.Drawing.Size(140, 23)
+        Me.lblShift.TabIndex = 12
+        '
+        'lblDay
+        '
+        Me.lblDay.BackColor = System.Drawing.SystemColors.Window
+        Me.lblDay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDay.Location = New System.Drawing.Point(90, 87)
+        Me.lblDay.Name = "lblDay"
+        Me.lblDay.Size = New System.Drawing.Size(140, 21)
+        Me.lblDay.TabIndex = 11
+        '
+        'cbShiftTime
+        '
+        Me.cbShiftTime.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbShiftTime.FormattingEnabled = True
+        Me.cbShiftTime.Location = New System.Drawing.Point(90, 58)
+        Me.cbShiftTime.Name = "cbShiftTime"
+        Me.cbShiftTime.Size = New System.Drawing.Size(140, 23)
+        Me.cbShiftTime.TabIndex = 10
+        '
+        'dtpDate
+        '
+        Me.dtpDate.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpDate.Location = New System.Drawing.Point(91, 28)
+        Me.dtpDate.MaxDate = New Date(2123, 3, 17, 0, 0, 0, 0)
+        Me.dtpDate.MinDate = New Date(2000, 1, 1, 0, 0, 0, 0)
+        Me.dtpDate.Name = "dtpDate"
+        Me.dtpDate.Size = New System.Drawing.Size(139, 23)
+        Me.dtpDate.TabIndex = 9
+        Me.dtpDate.Value = New Date(2023, 3, 17, 0, 0, 0, 0)
+        '
+        'Label5
+        '
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label5.Location = New System.Drawing.Point(12, 118)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(66, 15)
+        Me.Label5.TabIndex = 8
+        Me.Label5.Text = "SHIFT "
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.IconPictureBox1)
+        Me.Panel4.Controls.Add(Me.Label6)
+        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel4.Location = New System.Drawing.Point(0, 0)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(255, 23)
+        Me.Panel4.TabIndex = 0
+        '
+        'IconPictureBox1
+        '
+        Me.IconPictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.CalendarCheck
+        Me.IconPictureBox1.IconColor = System.Drawing.Color.White
+        Me.IconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconPictureBox1.IconSize = 21
+        Me.IconPictureBox1.Location = New System.Drawing.Point(230, 1)
+        Me.IconPictureBox1.Name = "IconPictureBox1"
+        Me.IconPictureBox1.Size = New System.Drawing.Size(21, 26)
+        Me.IconPictureBox1.TabIndex = 9
+        Me.IconPictureBox1.TabStop = False
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label6.ForeColor = System.Drawing.Color.Transparent
+        Me.Label6.Location = New System.Drawing.Point(5, 4)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(71, 15)
+        Me.Label6.TabIndex = 0
+        Me.Label6.Text = "SHIFT TIME"
+        '
+        'Label3
+        '
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label3.Location = New System.Drawing.Point(12, 62)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(66, 15)
+        Me.Label3.TabIndex = 6
+        Me.Label3.Text = "SHIFT TIME"
+        '
+        'Label4
+        '
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.Location = New System.Drawing.Point(12, 91)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(66, 13)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "DAY"
+        '
+        'Label2
+        '
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.Location = New System.Drawing.Point(12, 32)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(66, 15)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "DATE"
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel2.Controls.Add(Me.Panel11)
+        Me.Panel2.Controls.Add(Me.Panel5)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel2.ForeColor = System.Drawing.Color.White
+        Me.Panel2.Location = New System.Drawing.Point(320, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(713, 752)
+        Me.Panel2.TabIndex = 6
+        '
+        'Panel11
+        '
+        Me.Panel11.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Panel11.Controls.Add(Me.Panel9)
+        Me.Panel11.Controls.Add(Me.Panel12)
+        Me.Panel11.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel11.Location = New System.Drawing.Point(0, 56)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(713, 696)
+        Me.Panel11.TabIndex = 2
+        '
+        'Panel9
+        '
+        Me.Panel9.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel9.Controls.Add(Me.dgvMain)
+        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel9.ForeColor = System.Drawing.Color.Black
+        Me.Panel9.Location = New System.Drawing.Point(0, 0)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Padding = New System.Windows.Forms.Padding(5)
+        Me.Panel9.Size = New System.Drawing.Size(463, 696)
+        Me.Panel9.TabIndex = 2
+        '
+        'dgvMain
+        '
+        Me.dgvMain.AllowUserToAddRows = False
+        Me.dgvMain.AllowUserToDeleteRows = False
+        Me.dgvMain.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
+        Me.dgvMain.BorderStyle = System.Windows.Forms.BorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvMain.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvMain.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column2, Me.Column1, Me.noo, Me.fli, Me.Column10, Me.Column4, Me.lines, Me.Column6, Me.Column7, Me.Column8, Me.Column9, Me.Column3, Me.Column5})
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvMain.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvMain.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvMain.Location = New System.Drawing.Point(5, 5)
+        Me.dgvMain.Name = "dgvMain"
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvMain.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgvMain.RowHeadersWidth = 4
+        Me.dgvMain.RowTemplate.Height = 25
+        Me.dgvMain.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvMain.Size = New System.Drawing.Size(453, 686)
+        Me.dgvMain.TabIndex = 0
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = ""
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        Me.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.Column2.Width = 20
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "BAY NO"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        Me.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'noo
+        '
+        Me.noo.HeaderText = "NO"
+        Me.noo.Name = "noo"
+        Me.noo.ReadOnly = True
+        Me.noo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.noo.Width = 40
+        '
+        'fli
+        '
+        Me.fli.HeaderText = "FLIGHT"
+        Me.fli.Name = "fli"
+        Me.fli.ReadOnly = True
+        Me.fli.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Column10
+        '
+        Me.Column10.HeaderText = "ROUTE"
+        Me.Column10.Name = "Column10"
+        Me.Column10.ReadOnly = True
+        Me.Column10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.Column10.Width = 70
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "E.T.A"
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
+        '
+        'lines
+        '
+        Me.lines.HeaderText = "AIRLINE"
+        Me.lines.Name = "lines"
+        Me.lines.ReadOnly = True
+        Me.lines.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "RIC"
+        Me.Column6.Name = "Column6"
+        Me.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Column6.Width = 70
+        '
+        'Column7
+        '
+        Me.Column7.HeaderText = "OPERATOR"
+        Me.Column7.Name = "Column7"
+        Me.Column7.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Column7.Width = 70
+        '
+        'Column8
+        '
+        Me.Column8.HeaderText = "CREWMAN"
+        Me.Column8.Name = "Column8"
+        Me.Column8.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Column8.Width = 70
+        '
+        'Column9
+        '
+        Me.Column9.HeaderText = "REMARKS"
+        Me.Column9.Name = "Column9"
+        Me.Column9.ReadOnly = True
+        Me.Column9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.Column9.Width = 80
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Cancel"
+        Me.Column3.Name = "Column3"
+        Me.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Column3.Width = 50
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "DATE"
+        Me.Column5.Name = "Column5"
+        Me.Column5.ReadOnly = True
+        '
+        'Panel12
+        '
+        Me.Panel12.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Panel12.Controls.Add(Me.tbRoute)
+        Me.Panel12.Controls.Add(Me.Label18)
+        Me.Panel12.Controls.Add(Me.lblETAShow)
+        Me.Panel12.Controls.Add(Me.Label16)
+        Me.Panel12.Controls.Add(Me.Label17)
+        Me.Panel12.Controls.Add(Me.lblSelectedFlight)
+        Me.Panel12.Controls.Add(Me.cbOPerater)
+        Me.Panel12.Controls.Add(Me.btnUpdateData)
+        Me.Panel12.Controls.Add(Me.Label19)
+        Me.Panel12.Controls.Add(Me.cboxremarks)
+        Me.Panel12.Controls.Add(Me.tbBayNo)
+        Me.Panel12.Controls.Add(Me.Label15)
+        Me.Panel12.Controls.Add(Me.Label14)
+        Me.Panel12.Controls.Add(Me.btnResizePnl)
+        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel12.ForeColor = System.Drawing.Color.Black
+        Me.Panel12.Location = New System.Drawing.Point(463, 0)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Padding = New System.Windows.Forms.Padding(3)
+        Me.Panel12.Size = New System.Drawing.Size(250, 696)
+        Me.Panel12.TabIndex = 2
+        '
+        'tbRoute
+        '
+        Me.tbRoute.Location = New System.Drawing.Point(43, 196)
+        Me.tbRoute.Name = "tbRoute"
+        Me.tbRoute.Size = New System.Drawing.Size(165, 23)
+        Me.tbRoute.TabIndex = 37
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label18.Location = New System.Drawing.Point(41, 173)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(46, 15)
+        Me.Label18.TabIndex = 36
+        Me.Label18.Text = "ROUTE"
+        '
+        'lblETAShow
+        '
+        Me.lblETAShow.AutoSize = True
+        Me.lblETAShow.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblETAShow.Location = New System.Drawing.Point(120, 85)
+        Me.lblETAShow.Name = "lblETAShow"
+        Me.lblETAShow.Size = New System.Drawing.Size(33, 15)
+        Me.lblETAShow.TabIndex = 35
+        Me.lblETAShow.Text = "E.T.A"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label16.Location = New System.Drawing.Point(92, 85)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(27, 15)
+        Me.Label16.TabIndex = 34
+        Me.Label16.Text = "AT :"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label17.Location = New System.Drawing.Point(40, 62)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(48, 15)
+        Me.Label17.TabIndex = 31
+        Me.Label17.Text = "FLIGHT"
+        '
+        'lblSelectedFlight
+        '
+        Me.lblSelectedFlight.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lblSelectedFlight.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblSelectedFlight.Location = New System.Drawing.Point(94, 58)
+        Me.lblSelectedFlight.Name = "lblSelectedFlight"
+        Me.lblSelectedFlight.Size = New System.Drawing.Size(113, 23)
+        Me.lblSelectedFlight.TabIndex = 30
+        Me.lblSelectedFlight.Text = "Selected Flight"
+        Me.lblSelectedFlight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'cbOPerater
+        '
+        Me.cbOPerater.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbOPerater.FormattingEnabled = True
+        Me.cbOPerater.Location = New System.Drawing.Point(42, 258)
+        Me.cbOPerater.Name = "cbOPerater"
+        Me.cbOPerater.Size = New System.Drawing.Size(166, 23)
+        Me.cbOPerater.TabIndex = 29
+        '
+        'btnUpdateData
+        '
+        Me.btnUpdateData.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnUpdateData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnUpdateData.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnUpdateData.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnUpdateData.FlatAppearance.BorderSize = 0
+        Me.btnUpdateData.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnUpdateData.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnUpdateData.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUpdateData.IconChar = FontAwesome.Sharp.IconChar.PenToSquare
+        Me.btnUpdateData.IconColor = System.Drawing.Color.White
+        Me.btnUpdateData.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnUpdateData.IconSize = 25
+        Me.btnUpdateData.Location = New System.Drawing.Point(43, 361)
+        Me.btnUpdateData.Name = "btnUpdateData"
+        Me.btnUpdateData.Size = New System.Drawing.Size(166, 29)
+        Me.btnUpdateData.TabIndex = 14
+        Me.btnUpdateData.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnUpdateData.UseVisualStyleBackColor = False
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label19.Location = New System.Drawing.Point(40, 296)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(63, 15)
+        Me.Label19.TabIndex = 12
+        Me.Label19.Text = "REMARKS"
+        '
+        'cboxremarks
+        '
+        Me.cboxremarks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboxremarks.FormattingEnabled = True
+        Me.cboxremarks.Location = New System.Drawing.Point(43, 319)
+        Me.cboxremarks.Name = "cboxremarks"
+        Me.cboxremarks.Size = New System.Drawing.Size(166, 23)
+        Me.cboxremarks.TabIndex = 11
+        '
+        'tbBayNo
+        '
+        Me.tbBayNo.Location = New System.Drawing.Point(43, 135)
+        Me.tbBayNo.Name = "tbBayNo"
+        Me.tbBayNo.Size = New System.Drawing.Size(165, 23)
+        Me.tbBayNo.TabIndex = 3
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label15.Location = New System.Drawing.Point(40, 235)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(68, 15)
+        Me.Label15.TabIndex = 2
+        Me.Label15.Text = "OPERATOR"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label14.Location = New System.Drawing.Point(41, 112)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(50, 15)
+        Me.Label14.TabIndex = 1
+        Me.Label14.Text = "BAY NO"
+        '
+        'btnResizePnl
+        '
+        Me.btnResizePnl.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(77, Byte), Integer))
+        Me.btnResizePnl.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnResizePnl.FlatAppearance.BorderSize = 0
+        Me.btnResizePnl.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnResizePnl.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnResizePnl.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnResizePnl.IconChar = FontAwesome.Sharp.IconChar.AngleRight
+        Me.btnResizePnl.IconColor = System.Drawing.Color.WhiteSmoke
+        Me.btnResizePnl.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnResizePnl.IconSize = 20
+        Me.btnResizePnl.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.btnResizePnl.Location = New System.Drawing.Point(3, 3)
+        Me.btnResizePnl.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnResizePnl.MaximumSize = New System.Drawing.Size(244, 40)
+        Me.btnResizePnl.Name = "btnResizePnl"
+        Me.btnResizePnl.Size = New System.Drawing.Size(244, 40)
+        Me.btnResizePnl.TabIndex = 0
+        Me.btnResizePnl.Text = "     UPDATE TABLE ROWS"
+        Me.btnResizePnl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnResizePnl.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnResizePnl.UseVisualStyleBackColor = False
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel5.Controls.Add(Me.lbltoday)
+        Me.Panel5.Controls.Add(Me.lblTime)
+        Me.Panel5.Controls.Add(Me.Panel10)
+        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel5.ForeColor = System.Drawing.Color.Black
+        Me.Panel5.Location = New System.Drawing.Point(0, 0)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Padding = New System.Windows.Forms.Padding(10)
+        Me.Panel5.Size = New System.Drawing.Size(713, 56)
+        Me.Panel5.TabIndex = 0
+        '
+        'lbltoday
+        '
+        Me.lbltoday.AutoSize = True
+        Me.lbltoday.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lbltoday.ForeColor = System.Drawing.Color.Black
+        Me.lbltoday.Location = New System.Drawing.Point(24, 10)
+        Me.lbltoday.Name = "lbltoday"
+        Me.lbltoday.Size = New System.Drawing.Size(73, 15)
+        Me.lbltoday.TabIndex = 6
+        Me.lbltoday.Text = "22/03/2023"
+        '
+        'lblTime
+        '
+        Me.lblTime.AutoSize = True
+        Me.lblTime.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblTime.ForeColor = System.Drawing.Color.Black
+        Me.lblTime.Location = New System.Drawing.Point(24, 31)
+        Me.lblTime.Name = "lblTime"
+        Me.lblTime.Size = New System.Drawing.Size(35, 15)
+        Me.lblTime.TabIndex = 5
+        Me.lblTime.Text = "TIME"
+        '
+        'Panel10
+        '
+        Me.Panel10.Controls.Add(Me.btnPrint)
+        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel10.Location = New System.Drawing.Point(503, 10)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Size = New System.Drawing.Size(200, 36)
+        Me.Panel10.TabIndex = 4
+        '
+        'btnPrint
+        '
+        Me.btnPrint.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnPrint.FlatAppearance.BorderSize = 0
+        Me.btnPrint.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnPrint.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon
+        Me.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPrint.IconChar = FontAwesome.Sharp.IconChar.Print
+        Me.btnPrint.IconColor = System.Drawing.Color.White
+        Me.btnPrint.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnPrint.IconSize = 25
+        Me.btnPrint.Location = New System.Drawing.Point(61, 1)
+        Me.btnPrint.Name = "btnPrint"
+        Me.btnPrint.Size = New System.Drawing.Size(138, 34)
+        Me.btnPrint.TabIndex = 0
+        Me.btnPrint.UseVisualStyleBackColor = False
+        '
+        'Timer1
+        '
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        '
+        'UserControlTimeTable
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Panel1)
+        Me.Name = "UserControlTimeTable"
+        Me.Size = New System.Drawing.Size(1033, 752)
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel6.ResumeLayout(False)
+        Me.pnlRIC.ResumeLayout(False)
+        Me.pnlRIC.PerformLayout()
+        CType(Me.IconPictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlCM.ResumeLayout(False)
+        Me.ContextMenuStrip2.ResumeLayout(False)
+        Me.Panel8.ResumeLayout(False)
+        Me.Panel8.PerformLayout()
+        CType(Me.IconPictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
+        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel11.ResumeLayout(False)
+        Me.Panel9.ResumeLayout(False)
+        CType(Me.dgvMain, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel12.ResumeLayout(False)
+        Me.Panel12.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
+        Me.Panel10.ResumeLayout(False)
+        Me.ResumeLayout(False)
+
     End Sub
 
     Friend WithEvents Label1 As Label

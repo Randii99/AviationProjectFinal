@@ -25,9 +25,10 @@ Public Class ImportExcel
                 tbpath.Text = filePath
             End If
         Catch ex As Exception
-            MsgBox(ex)
+            MessageBox.Show("An error occurred: " & ex.Message)
         End Try
     End Sub
+
 
     Private Sub btnExcell_Click(sender As Object, e As EventArgs) Handles btnExcell.Click
         Try
@@ -39,14 +40,14 @@ Public Class ImportExcel
 
             ' Create the connection string and open the connection
             Dim connString As String = "Provider=Microsoft.ACE.OLEDB.12.0;" & "Data Source=" & tbpath.Text & ";Extended Properties='Excel 12.0 Xml;HDR=YES;IMEX=1;'"
-            Using conn As New OLEDBConnection(connString)
+            Using conn As New OleDbConnection(connString)
                 Try
 
                     conn.Open()
 
                     ' Retrieve the data from the sheet into a DataTable
                     Dim sheetName As String = "Sheet1$" ' Change this to your sheet name
-                    Dim cmd As New OleDbCommand("SELECT Column1, Column2 FROM [" & sheetName & "]", conn)
+                    Dim cmd As New OleDbCommand("SELECT * FROM [" & sheetName & "]", conn)
                     Dim da As New OleDbDataAdapter(cmd)
                     Dim dt As New System.Data.DataTable()
                     da.Fill(dt)
@@ -55,8 +56,21 @@ Public Class ImportExcel
                     dgvExcell.DataSource = dt
 
                     For Each column As DataColumn In dt.Columns
-                        dgvExcell.Columns(column.ColumnName).HeaderText = "Plane"
+                        dgvExcell.Columns("Flight number").HeaderText = "Flight number"
+                        dgvExcell.Columns("Airline Category").HeaderText = "Airline Category"
+                        dgvExcell.Columns("STD").HeaderText = "STD"
+                        dgvExcell.Columns("Dipature time").HeaderText = "Departure time"
+                        dgvExcell.Columns("Date").HeaderText = "Date"
+                        dgvExcell.Columns("ETA").HeaderText = "ETA"
+
+
+                        ' Set the format for the "S.T.D," "Dipature time," and "E.T.A" columns
+                        dgvExcell.Columns("STD").DefaultCellStyle.Format = "HH:mm:ss"
+                        dgvExcell.Columns("Dipature time").DefaultCellStyle.Format = "HH:mm:ss"
+                        dgvExcell.Columns("ETA").DefaultCellStyle.Format = "HH:mm:ss"
+
                     Next
+
 
 
                 Catch ex As Exception
@@ -69,6 +83,8 @@ Public Class ImportExcel
             MessageBox.Show("An error occurred while inserting data: " & ex.Message)
         End Try
     End Sub
+
+
 
     Private Sub ImportExcel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         For Each frm As Form In System.Windows.Forms.Application.OpenForms
@@ -85,5 +101,9 @@ Public Class ImportExcel
                 form.Enabled = True
             End If
         Next
+    End Sub
+
+    Private Sub tbpath_TextChanged(sender As Object, e As EventArgs) Handles tbpath.TextChanged
+
     End Sub
 End Class

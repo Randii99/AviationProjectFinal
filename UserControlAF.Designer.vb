@@ -279,6 +279,7 @@ Partial Class UserControlAF
         '
         'cbDT
         '
+        Me.cbDT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbDT.FormattingEnabled = True
         Me.cbDT.Location = New System.Drawing.Point(235, 261)
         Me.cbDT.Name = "cbDT"
@@ -330,6 +331,7 @@ Partial Class UserControlAF
         '
         'cbStd1
         '
+        Me.cbStd1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbStd1.FormattingEnabled = True
         Me.cbStd1.Location = New System.Drawing.Point(311, 220)
         Me.cbStd1.Name = "cbStd1"
@@ -338,6 +340,7 @@ Partial Class UserControlAF
         '
         'cbStd
         '
+        Me.cbStd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbStd.FormattingEnabled = True
         Me.cbStd.Location = New System.Drawing.Point(235, 220)
         Me.cbStd.Name = "cbStd"
@@ -365,6 +368,7 @@ Partial Class UserControlAF
         '
         'cbairlinecategory
         '
+        Me.cbairlinecategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbairlinecategory.FormattingEnabled = True
         Me.cbairlinecategory.Location = New System.Drawing.Point(235, 127)
         Me.cbairlinecategory.Name = "cbairlinecategory"
